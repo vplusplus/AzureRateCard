@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AzureRatecard.Models
+namespace AzureRateCard.Models
 {
     public class Subscription
     {

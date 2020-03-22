@@ -1,14 +1,17 @@
-﻿using Microsoft.Identity.Client;
+﻿
 using System;
-using System.Collections.Generic;
 using System.Security;
-using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Identity.Client;
 
-namespace AzureRatecard
+namespace AzureRateCard
 {
     static class AccessTokenProvider
     {
+        /// <summary>
+        /// Obtains access token using user credentials.
+        /// Not the best option, till something better come-up for non-intractive clients. 
+        /// </summary>
         internal static async Task<string> GetAccessTokenAsync(string tenantId, string clientId, string userId, string password, string targetApiScope)
         {
             if (null == tenantId) throw new ArgumentNullException(nameof(tenantId));
@@ -19,10 +22,11 @@ namespace AzureRatecard
 
             // REF: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Username-Password-Authentication
 
-            var authority = $"https://login.microsoftonline.com/{tenantId}";
-
             try
             {
+                var authority = $"https://login.microsoftonline.com/{tenantId}";
+
+                // App is not using singleton, given the internal consumer takes access token only once.
                 var app = PublicClientApplicationBuilder
                     .Create(clientId)
                     .WithAuthority(authority)
@@ -30,11 +34,8 @@ namespace AzureRatecard
 
                 string[] scopes = new[] { targetApiScope };
 
-                var securePassword = new SecureString();
-                foreach (var c in password) securePassword.AppendChar(c);
-
                 var tokenResult = await app
-                    .AcquireTokenByUsernamePassword(scopes, userId, securePassword)
+                    .AcquireTokenByUsernamePassword(scopes, userId, ToSecureString(password))
                     .ExecuteAsync();
 
                 return tokenResult.AccessToken;
@@ -44,8 +45,16 @@ namespace AzureRatecard
                 var msg = $"Error acquiring AccessToken. Target: {targetApiScope}";
                 throw new Exception(msg, err);
             }
+
+            static SecureString ToSecureString(string sometext)
+            {
+                if (null == sometext) throw new ArgumentNullException(nameof(sometext));
+
+                var secureString = new SecureString();
+                foreach (var c in sometext) secureString.AppendChar(c);
+
+                return secureString;
+            }
         }
-
-
     }
 }

@@ -1,24 +1,26 @@
-﻿using Microsoft.Identity.Client;
+﻿
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Security;
-using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace AzureRatecard
+namespace AzureRateCard
 {
+    /// <summary>
+    /// Just enough HttpClient for Azure Resource Manager REST APIs.
+    /// </summary>
     public sealed class ArmClient : HttpClient
     {
         const string AzureResourceManagerBaseUri = "https://management.azure.com/";
 
-        private ArmClient(HttpMessageHandler messageHander) : base(messageHander)
+        //.........................................................................................
+        #region ArmClient.Connect()
+        //.........................................................................................
+        private ArmClient(HttpMessageHandler messageHandler) : base(messageHandler ?? throw new ArgumentNullException(nameof(messageHandler)))
         {
             //
         }
@@ -46,16 +48,6 @@ namespace AzureRatecard
             handler = new ArmTransientErrorHandler(handler);
             handler = new ArmErrorHandler(handler);
 
-            //var messageHandlerPipeline = HttpClientFactory.CreatePipeline
-            //(
-            //    new HttpClientHandler() { AutomaticDecompression = DecompressionMethods.GZip },
-            //    new DelegatingHandler[]
-            //    {
-            //        new ArmTransientErrorHandler(),
-            //        new ArmErrorHandler()
-            //    }
-            //);
-
             var client = new ArmClient(handler);
             client.BaseAddress = new Uri(AzureResourceManagerBaseUri);
             client.DefaultRequestHeaders.Clear();
@@ -63,6 +55,12 @@ namespace AzureRatecard
             client.DefaultRequestHeaders.Authorization = authHeader;
             return client;
         }
+
+        #endregion
+
+        //.........................................................................................
+        #region GetAsAsync<T>() and GetManyAsync<T>()
+        //.........................................................................................
 
         static readonly JsonSerializerOptions DefaultJsonSerializerOptions = new JsonSerializerOptions()
         {
@@ -72,7 +70,13 @@ namespace AzureRatecard
             WriteIndented = true,
         };
 
-        public async Task<T> GetAs<T>(string resourcePath, JsonSerializerOptions options = null)
+        class Many<T>
+        {
+            [JsonPropertyName("value")]
+            public List<T> Items { get; set; }
+        }
+
+        public async Task<T> GetAsAsync<T>(string resourcePath, JsonSerializerOptions options = null)
         {
             if (null == resourcePath) throw new ArgumentNullException(nameof(resourcePath));
 
@@ -89,18 +93,15 @@ namespace AzureRatecard
             }
         }
 
-        public async Task<IList<T>> GetMany<T>(string resourcePath)
+        public async Task<IList<T>> GetManyAsync<T>(string resourcePath)
         {
             if (null == resourcePath) throw new ArgumentNullException(nameof(resourcePath));
 
-            var items = await this.GetAs<Many<T>>(resourcePath).ConfigureAwait(false);
+            var items = await this.GetAsAsync<Many<T>>(resourcePath).ConfigureAwait(false);
             return items?.Items;
         }
 
-        private class Many<T> 
-        {
-            [JsonPropertyName("value")]
-            public List<T> Items { get; set; }
-        }
+        #endregion
+
     }
 }

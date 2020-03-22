@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AzureRatecard
+namespace AzureRateCard
 {
     /// <summary>
     /// Can translate ARM REST API error to local exception.
