@@ -15,7 +15,8 @@ namespace AzureRateCard
     /// </summary>
     public sealed class ArmClient : HttpClient
     {
-        const string AzureResourceManagerBaseUri = "https://management.azure.com/";
+        public const string AzureResourceManagerBaseUri = "https://management.azure.com/";
+        public static readonly string AzureResourceManagerScope = $"{AzureResourceManagerBaseUri}/.default";
 
         //.........................................................................................
         #region ArmClient.Connect()
@@ -25,16 +26,15 @@ namespace AzureRateCard
             //
         }
 
-        public static ArmClient Connect(string tenantId, string clientId, string userId, string password)
+        /// <summary>
+        /// HttpClient with SocketsHttpHandler, ArmTransientErrorHandler and ArmErrorHandler.
+        /// With ClientId/ClientCertificate based authorization.
+        /// Accepts json with optional GZip.
+        /// </summary>
+        public static ArmClient Connect()
         {
-            if (null == tenantId) throw new ArgumentNullException(nameof(tenantId));
-            if (null == clientId) throw new ArgumentNullException(nameof(clientId));
-            if (null == userId) throw new ArgumentNullException(nameof(userId));
-            if (null == password) throw new ArgumentNullException(nameof(password));
-
-            var targetApiScope = $"{AzureResourceManagerBaseUri}/.default";
             var accessToken = AccessTokenProvider
-                .GetAccessTokenAsync(tenantId, clientId, userId, password, targetApiScope)
+                .FromClientIdAndClientCertificate(AzureResourceManagerScope)
                 .ConfigureAwait(false)
                 .GetAwaiter()
                 .GetResult();
@@ -43,7 +43,7 @@ namespace AzureRateCard
 
             HttpMessageHandler handler = new SocketsHttpHandler()
             {
-                AutomaticDecompression = System.Net.DecompressionMethods.GZip
+                AutomaticDecompression = DecompressionMethods.GZip,
             };
             handler = new ArmTransientErrorHandler(handler);
             handler = new ArmErrorHandler(handler);

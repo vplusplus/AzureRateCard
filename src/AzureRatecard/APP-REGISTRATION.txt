@@ -1,0 +1,42 @@
+﻿
+//........................................................................
+#1 Register a new App in AAD
+//........................................................................
+Portal -> AAD -> App Registrations -> New registration
+Name: AzureRateCardClient (example)
+Select Accounts in this organizational directory only (vplusplus only - Single tenant)
+Under Redirect URI (optional), select "Public client/native (mobile & desktop)"
+
+//........................................................................
+#2 From App Regstration Note down Tenant and Client id
+//........................................................................
+Portal -> AAD -> App Registrations -> [AzureRateCardClient] -> Overview
+Directory (tenant) ID			vplusplus.onmicrosoft.com
+Application (Client) Id			d3ad1455-8205-4c22-861d-85ce65365285
+
+//........................................................................
+#3 Add certificate
+//........................................................................
+Portal -> AAD -> App Registrations -> [AzureRateCardClient] -> Certificates & secrets
+Upload certificate (.cer / only public key)
+
+//........................................................................
+#4 Provide API Permission
+//........................................................................
+Portal -> AAD -> App Registrations -> [AzureRateCardClient] -> API permissions
++ Add permission
++ Azure Service Management
++ Select user_impersonation checkbox
++ It's a delegaed permission
++ Under configure permissions - Select Grant admin consent for ...
++ Note: Microsoft Graph may not be reauired.
+
+//........................................................................
+#5 Provide Billing reader access to at-least ONE subscription
+//........................................................................
++ Portal -> Subscrptions -> Select One Subscription
++ [Subscription] -> Access Control (IAM)
++ Add a role assignment
++ Assign "Billing Reader" to the newly registered application
+
+

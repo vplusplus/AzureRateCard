@@ -23,7 +23,7 @@ namespace AzureRateCard
 
             try 
             {
-                using(var armClient = ArmClient.Connect(MyConfig.MyTenantId, MyConfig.MyClientId, MyConfig.MyUserId, MyConfig.MyPassword))
+                using(var armClient = ArmClient.Connect())
                 {
                     var path = "/subscriptions?api-version=2020-01-01";
                     var subs = await armClient.GetManyAsync<Subscription>(path);
@@ -33,9 +33,12 @@ namespace AzureRateCard
                     Console.WriteLine(sub.SubscriptionId);
                     Console.WriteLine(sub.DisplayName);
 
-                    // var subscriptionId = sub.SubscriptionId;
-                    // var rateCardPath = $"/subscriptions/{subscriptionId}/providers/Microsoft.Commerce/RateCard?api-version=2016-08-31-preview&$filter=OfferDurableId eq 'MS-AZR-0003p' and Currency eq 'USD' and Locale eq 'en-US' and RegionInfo eq 'US'";
-                    // var rateCard = await armClient.GetAsAsync<RateCard>(rateCardPath);
+                    var subscriptionId = sub.SubscriptionId;
+                    var rateCardPath = $"/subscriptions/{subscriptionId}/providers/Microsoft.Commerce/RateCard?api-version=2016-08-31-preview&$filter=OfferDurableId eq 'MS-AZR-0003p' and Currency eq 'USD' and Locale eq 'en-US' and RegionInfo eq 'US'";
+                    var rateCard = await armClient.GetAsAsync<RateCard>(rateCardPath);
+
+                    var meterCount = (rateCard?.Meters?.Count).GetValueOrDefault(-1);
+                    Console.WriteLine($"MEterCount: {meterCount}");
 
                     // var json = Newtonsoft.Json.JsonConvert.SerializeObject(rateCard, Newtonsoft.Json.Formatting.Indented);
                     // File.WriteAllText("../../../SampleRateCard.json", json);
