@@ -16,11 +16,11 @@ namespace UnitTests
     [TestClass]
     public class UnitTest1
     {
-        const string SampleRateCardFileName = "../../../SampleJsons/SampleRateCard.json";
+        const string RateCardFileName = "../../../RAW/RateCard.json";
 
         static RateCard LoadSampleRateCard() 
         {
-            using (var file = File.OpenText(SampleRateCardFileName))
+            using (var file = File.OpenText(RateCardFileName))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 return (RateCard)serializer.Deserialize(file, typeof(RateCard));
@@ -118,49 +118,9 @@ namespace UnitTests
             var keep = AllRegions.Except(IgnoreRegions).ToList();
             foreach (var name in keep) Console.WriteLine(name);
         }
-
-        [TestMethod]
-        public async Task GetVirtualMachineSKUs()
-        {
-            // GET https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Compute/skus?api-version=2019-04-01
-
-            var tenantID = System.Configuration.ConfigurationManager.AppSettings["RateCard.TenantId"] ?? throw new Exception("APP SETTING ISSUE");
-
-
-            var subscriptionId = "396fa5f0-204b-42cb-9125-85d9775e1f77";
-
-            using(var arm = ArmClient.Connect())
-            {
-                var path = $"/subscriptions/{subscriptionId}/providers/Microsoft.Compute/skus?api-version=2019-04-01";
-
-                var json = await arm.GetStringAsync(path);
-                json = json.PrettyJson();
-
-                File.WriteAllText("../../../SampleJsons/VirtualMachineSkus.json", json);
-            }
-
-        }
     }
 
 
-    internal static class MoreLinq
-    {
-        public static bool In(this string something, IEnumerable<string> set)
-        {
-            return null != something && null != set && set.Any(x => x.Equals(something));
-        }
-
-        public static string PrettyJson(this string json)
-        {
-            // Pretty inefficient. 
-            // Good enough for testing.
-            // Dont use in production.
-            return string.IsNullOrWhiteSpace(json)
-                ? json
-                : JsonConvert.SerializeObject(JsonConvert.DeserializeObject(json), Formatting.Indented);
-        }
-
-    }
 
 
 }

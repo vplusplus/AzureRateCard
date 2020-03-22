@@ -18,7 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AzureRatecard\AzureRatecard.csproj" />
+    <ProjectReference Include="..\AzureRatecard\AzureRateCard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="RAW\" />
   </ItemGroup>
 
   <!-- 
@@ -29,7 +33,7 @@
   -->
   <Target Name="CopyAppConfig" AfterTargets="Build" DependsOnTargets="Build">
     <CreateItem Include="$(OutputPath)$(AssemblyName).dll.config">
-      <Output TaskParameter="Include" ItemName="FilesToCopy"/>
+      <Output TaskParameter="Include" ItemName="FilesToCopy" />
     </CreateItem>
     <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="$(OutputPath)testhost.dll.config" />
   </Target>  

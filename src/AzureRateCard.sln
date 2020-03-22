@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureRatecard", "AzureRatecard\AzureRatecard.csproj", "{F38657FA-8A20-47D7-BCB7-C30870B1AE2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureRateCard", "AzureRatecard\AzureRateCard.csproj", "{F38657FA-8A20-47D7-BCB7-C30870B1AE2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{62C63A99-7755-4DF5-A5A2-10373EA53D66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{62C63A99-7755-4DF5-A5A2-10373EA53D66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
