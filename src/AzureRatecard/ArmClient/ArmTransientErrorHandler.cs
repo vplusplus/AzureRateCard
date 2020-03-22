@@ -16,7 +16,8 @@ namespace AzureRateCard
         const int MaxAttempts = 3;
         static readonly Random RandomDelay = new Random(Guid.NewGuid().GetHashCode());
 
-        internal ArmTransientErrorHandler(HttpMessageHandler innerHandler) : base(innerHandler)
+        internal ArmTransientErrorHandler(HttpMessageHandler innerHandler) 
+            : base(innerHandler ?? throw new ArgumentNullException(nameof(innerHandler)))
         {
             //
         }
@@ -38,7 +39,12 @@ namespace AzureRateCard
                 if (attempt >= MaxAttempts) throw;
                 else if (request.Method == HttpMethod.Post || request.Method == HttpMethod.Put) throw;
                 else if (!IsTransientError(err)) throw;
-                else await Task.Delay(RandomDelay.Next(100, 1000)).ConfigureAwait(false);
+                else 
+                {
+                    // Print error; Wait; Try again.
+                    PrintErrorToConsole(err);
+                    await Task.Delay(RandomDelay.Next(100, 1000)).ConfigureAwait(false);
+                }
             }
             goto tryagain;
         }
@@ -58,15 +64,31 @@ namespace AzureRateCard
         // Well-known transient error signatures 
         static readonly Regex[] TransientErrorSignatures = new[]
         {
-                "TestTransientError",
-                "RequestTimeout",
-                "GatewayTimeout",
-                "System.Net.Sockets.SocketException",
-                "server busy",
-                "serverbusy",
-                "connection was closed unexpectedly",
+            "TestTransientError",
+            "RequestTimeout",
+            "GatewayTimeout",
+            "System.Net.Sockets.SocketException",
+            "server busy",
+            "serverbusy",
+            "connection was closed unexpectedly",
         }
         .Select(x => new Regex(x, RegexOptions.Compiled | RegexOptions.IgnoreCase))
         .ToArray();
+
+        static void PrintErrorToConsole(Exception err)
+        {
+            if (null != err)
+            {
+                var topError = err;
+
+                while (null != err)
+                {
+                    Console.WriteLine(err.Message);
+                    err = err.InnerException;
+                }
+
+                Console.WriteLine(topError.StackTrace);
+            }
+        }
     }
 }

@@ -16,6 +16,8 @@ namespace AzureRateCard
         {
             if (null == targetApiScope) throw new ArgumentNullException(nameof(targetApiScope));
 
+            // THIS implementation is NOT intended as general-purpose lib.
+            // THIS library is secific to RateCard client.
             var tenantId = MyConfig.RateCardTenantId;
             var clientId = MyConfig.RateCardClientId;
             var clientCertThumbprint = MyConfig.RateCardClientCertThumbprint;
@@ -25,15 +27,17 @@ namespace AzureRateCard
                 var authority = $"https://login.microsoftonline.com/{MyConfig.RateCardTenantId}";
                 X509Certificate2 clientCertificate = ReadCertificate(clientCertThumbprint);
 
+                // Confidential client with certificate autnetication.
                 IConfidentialClientApplication app = ConfidentialClientApplicationBuilder
                     .Create(MyConfig.RateCardClientId)
                     .WithAuthority(authority)
                     .WithCertificate(clientCertificate)
                     .Build();
 
+                // Our use-case has only one scope...
                 string[] scopes = new[] { targetApiScope };
 
-                // NOTE: Check the token cache first. Refer online sample.
+                // Obtain access token.
                 var tokenResult = await app
                     .AcquireTokenForClient(scopes)
                     .ExecuteAsync();

@@ -13,7 +13,8 @@ namespace AzureRateCard
     /// </summary>
     internal sealed class ArmErrorHandler : DelegatingHandler
     {
-        internal ArmErrorHandler(HttpMessageHandler innerHandler) : base(innerHandler)
+        internal ArmErrorHandler(HttpMessageHandler innerHandler) 
+            : base(innerHandler ?? throw new ArgumentNullException(nameof(innerHandler)))
         {
             //
         }
