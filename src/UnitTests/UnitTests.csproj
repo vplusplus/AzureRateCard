@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CSV\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>
