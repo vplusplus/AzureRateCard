@@ -1,0 +1,87 @@
+// ------------------------------------------------------ 
+// List of regions processed.
+// Commented regions will be ignored.
+// ------------------------------------------------------ 
+
+// ?? UAE ??
+// AE Central
+// AE North
+
+// ASPAC
+AP East
+AP Southeast
+
+// Australia
+// AU Central
+// AU Central 2
+// AU East
+// AU Southeast
+
+// Brazil
+// BR South
+
+// Canada 
+// CA Central
+// CA East
+// CH North
+// CH West
+
+// ???
+// DE North
+// DE West Central
+
+// Europe
+EU North
+EU West
+
+// France
+// FR Central
+// FR South
+
+// India
+// IN Central
+// IN South
+// IN West
+
+// Japan
+// JA East
+// JA West
+
+// Korea
+// KR Central
+// KR South
+
+// Norway
+// NO East
+// NO West
+
+// United Kingdom
+// UK South
+// UK West
+
+US East
+US East 2
+// US Central
+// US North Central
+// US South Central
+// US West Central
+US West
+US West 2
+
+// Azure Stack
+// US Sec East
+// US Sec West
+// USGov
+// US DoD
+// US Gov
+// US Gov AZ
+// US Gov TX
+// US Gov Zone 1
+// US Gov Zone 2
+// ZA North
+// ZA West
+// Zone 1
+// Zone 2
+// Zone 3
+// Zone 4
+// Zone 5

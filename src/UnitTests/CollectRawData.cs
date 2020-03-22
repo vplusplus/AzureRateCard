@@ -1,11 +1,12 @@
 ﻿
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
-using AzureRateCard;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using AzureRateCard;
+using System.Linq;
+using System;
+using CsvHelper;
+using System.Globalization;
 
 namespace UnitTests
 {
@@ -38,9 +39,43 @@ namespace UnitTests
             }
         }
 
+        [TestMethod]
+        public void RefreshRegionList()
+        {
+            var items = RawData.RateCard.Value
+                .Meters
+                .Select(x => x.MeterRegion)
+                .Distinct()
+                .IgnoreBlankLines()
+                .OrderBy(x => x)
+                .ToList();
 
+            var allRegionsFileName = Path.Combine(K.DataFolder, "AllRegions.txt");
 
+            using(var txtOut = File.CreateText(allRegionsFileName))
+            {
+                txtOut.WriteLine($"// ------------------------------------------------------ ");
+                txtOut.WriteLine($"// List of all regions");
+                txtOut.WriteLine($"// Generated on {DateTime.Now}");
+                txtOut.WriteLine($"// ------------------------------------------------------ ");
 
+                foreach (var item in items) txtOut.WriteLine(item);
+            }
+        }
+
+        [TestMethod]
+        public void RefreshMeterCategories()
+        {
+            var csvFileName = Path.Combine(K.DataFolder, "MeterCategories.csv");
+
+            RawData.RateCard.Value
+                .Meters
+                .Select(x => new { x.MeterCategory, x.MeterSubCategory })
+                .Distinct()
+                .OrderBy(x => x.MeterCategory)
+                .ThenBy(x => x.MeterSubCategory)
+                .SaveAsCsv(csvFileName);
+        }
 
     }
 }

@@ -1,15 +1,13 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AzureRateCard.Models;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+
+using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
-using System;
+using Newtonsoft.Json;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CsvHelper;
-using System.Globalization;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using AzureRateCard;
+using AzureRateCard.Models;
+using System.Diagnostics;
 
 namespace UnitTests
 {
@@ -18,77 +16,92 @@ namespace UnitTests
     {
         const string RateCardFileName = "../../../RAW/RateCard.json";
 
-        static RateCard LoadSampleRateCard() 
-        {
-            using (var file = File.OpenText(RateCardFileName))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                return (RateCard)serializer.Deserialize(file, typeof(RateCard));
-            }
-        }
-
-        static string[] IgnoreRegions => File
-            .ReadAllLines("../../../Data/IgnoreRegions.txt")
-            .Where(x => !string.IsNullOrWhiteSpace(x))
-            .Select(x => x.Trim())
-            .Where(x => !x.StartsWith("//"))
-            .ToArray();
-
-        static string[] AllRegions => File
-            .ReadAllLines("../../../Data/AllRegions.txt")
-            .Where(x => !string.IsNullOrWhiteSpace(x))
-            .Select(x => x.Trim())
-            .Where(x => !x.StartsWith("//"))
-            .ToArray();
-
-
         [TestMethod]
-        public void DistinctCategories()
+        public void MeasureReadCategories()
         {
-            var rc = LoadSampleRateCard();
+            var rc = RawData.RateCard.Value;
 
-            var categories = rc.Meters
-                .Select(x => new { x.MeterCategory, x.MeterSubCategory })
-                .Distinct()
-                .OrderBy(x => x.MeterCategory)
-                .ThenBy(x => x.MeterSubCategory)
-                .ToList();
-
-            using (var writer = new StreamWriter("../../../Data/MeterCategories.csv"))
-            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            var timer = Stopwatch.StartNew();
+            int loopCount = 100;
+            for(int i=0; i<loopCount; i++)
             {
-                csv.WriteRecords(categories);
+                rc.Meters
+                    .Select(x => new { x.MeterCategory, x.MeterSubCategory })
+                    .Distinct()
+                    .OrderBy(x => x.MeterCategory)
+                    .ThenBy(x => x.MeterSubCategory)
+                    .ToList();
             }
+            timer.Stop();
+
+            var elapsed = timer.Elapsed;
+            Console.WriteLine($"Elapsed: {elapsed.TotalMilliseconds:#,0} mSec");
+            Console.WriteLine($"Average: {elapsed.TotalMilliseconds/loopCount:#,0} mSec");
         }
 
         [TestMethod]
-        public void DistinctRegions()
+        public void MeasureFilterSelectAndSortFromRawData()
         {
-            var rc = LoadSampleRateCard();
+            var rc = RawData.RateCard.Value;
+            var keep = RawData.SelectRegions.ToList();
+            var meters = rc.Meters.Where(x => x.MeterRegion.In(keep)).ToList();
 
-            var categories = rc.Meters
-                .Select(x => new { x.MeterRegion })
-                .Distinct()
-                .OrderBy(x => x.MeterRegion)
-                .ToList();
-
-            using (var writer = new StreamWriter("../../../Data/MeterRegions.csv"))
-            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            var timer = Stopwatch.StartNew();
+            int loopCount = 10;
+            for (int i = 0; i < loopCount; i++)
             {
-                csv.WriteRecords(categories);
+                var kb = meters
+                    .OrderBy(x => x.MeterCategory)
+                    .ToJson()
+                    .Length / 1024;
+
+                //Console.WriteLine(kb);
             }
+            timer.Stop();
+
+            var elapsed = timer.Elapsed;
+            Console.WriteLine($"Elapsed: {elapsed.TotalMilliseconds:#,0} mSec");
+            Console.WriteLine($"Average: {elapsed.TotalMilliseconds / loopCount:#,0} mSec");
         }
 
-        const int HoursPerMonth = 365 * 24 / 12;
+
+        [TestMethod]
+        public void SizeTest()
+        {
+            var keep = RawData.SelectRegions.ToList();
+
+            var kb = RawData.RateCard.Value.ToJson().Length / 1024;
+            Console.WriteLine($"Full rate card: {kb:#,0} KB");
+
+            kb = RawData.RateCard.Value
+                .Meters
+                .ToJson()
+                .Length / 1024;
+            Console.WriteLine($"RateCard.Meters: {kb:#,0} KB");
+
+            kb = RawData.RateCard.Value
+                .Meters
+                .Where(x => x.MeterRegion.In(keep))
+                .ToJson()
+                .Length / 1024;
+            Console.WriteLine($"Select Regions only: {kb:#,0} KB");
+
+            kb = RawData.RateCard.Value
+                .Meters
+                .Where(x => !x.MeterRegion.In(keep))
+                .ToJson()
+                .Length / 1024;
+            Console.WriteLine($"Dropped: {kb:#,0} KB");
+
+        }
 
         [TestMethod]
         public void JustVMs()
         {
-            var rc = LoadSampleRateCard();
-            var selectRegions = AllRegions.Except(IgnoreRegions).ToArray();
+            var selectRegions = RawData.SelectRegions.ToList();
            
-
-            var data = rc.Meters
+            var data = RawData.RateCard.Value
+                .Meters
                 .Where(x => x.MeterCategory.Equals("Virtual Machines"))
                 .Where(x =>  x.MeterRegion.In(selectRegions))
                 .Select(x => new
@@ -99,7 +112,7 @@ namespace UnitTests
                     x.MeterRegion,
                     //x.Unit,
                     PerHour = x.MeterRates?.FirstOrDefault().Value,
-                    PerMonth = x.MeterRates?.FirstOrDefault().Value * HoursPerMonth,
+                    PerMonth = x.MeterRates?.FirstOrDefault().Value * K.HoursPerMonth,
                     //x.MeterRates,
                     //MeterRate = x.MeterRates?.FirstOrDefault()?.Value,
                 })
@@ -110,13 +123,6 @@ namespace UnitTests
             {
                 csv.WriteRecords(data);
             }
-        }
-
-        [TestMethod]
-        public void PrintKeptRegions()
-        {
-            var keep = AllRegions.Except(IgnoreRegions).ToList();
-            foreach (var name in keep) Console.WriteLine(name);
         }
     }
 

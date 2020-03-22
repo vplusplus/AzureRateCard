@@ -1,7 +1,12 @@
+// ------------------------------------------------------ 
+// List of all regions
+// Generated on 3/22/2020 1:26:04 PM
+// ------------------------------------------------------ 
+
 AE Central
 AE North
-// AP East
-// AP Southeast
+AP East
+AP Southeast
 AU Central
 AU Central 2
 AU East
@@ -14,8 +19,8 @@ CH North
 CH West
 DE North
 DE West Central
-// EU North
-// EU West
+EU North
+EU West
 FR Central
 FR South
 IN Central
@@ -31,8 +36,8 @@ UK South
 UK West
 US Central
 US DoD
-// US East
-// US East 2
+US East
+US East 2
 US Gov
 US Gov AZ
 US Gov TX
@@ -42,8 +47,8 @@ US North Central
 US Sec East
 US Sec West
 US South Central
-// US West
-// US West 2
+US West
+US West 2
 US West Central
 USGov
 ZA North

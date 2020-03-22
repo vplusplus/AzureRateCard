@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="RAW\" />
+    <Folder Include="RawData\" />
   </ItemGroup>
 
   <!-- 

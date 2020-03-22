@@ -9,7 +9,7 @@ namespace AzureRateCard
     /// <summary>
     /// Collects RAW data (json) of the RateCards and SKUs
     /// </summary>
-    public static class RawData
+    public static class RateCardExtensions
     {
         /// <summary>
         /// Returns the SubscriptionId of first available subscription.
