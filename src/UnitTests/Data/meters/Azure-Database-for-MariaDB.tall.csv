@@ -1,0 +1,121 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+2 vCore,US East 2,59.568000000000005,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,EU West,58.108000000000004,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,AP East,94.82699999999998,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,AP Southeast,75.92,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,US West,64.53200000000001,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,US East,49.64,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,EU North,53.144000000000005,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,US West 2,49.64,Basic - Compute Gen5,02/01/2019 00:00:00
+2 vCore,AP Southeast,37.974599999999995,Basic - Compute Gen4,08/30/2018 00:00:00
+2 vCore,EU North,26.805600000000002,Basic - Compute Gen4,08/30/2018 00:00:00
+2 vCore,US East 2,29.784000000000002,Basic - Compute Gen4,08/30/2018 00:00:00
+2 vCore,EU West,29.2876,Basic - Compute Gen4,08/30/2018 00:00:00
+2 vCore,US West 2,24.82,Basic - Compute Gen4,08/30/2018 00:00:00
+2 vCore,US East,24.82,Basic - Compute Gen4,08/30/2018 00:00:00
+2 vCore,AP East,47.6544,Basic - Compute Gen4,08/30/2018 00:00:00
+2 vCore,US West,32.266000000000005,Basic - Compute Gen4,08/30/2018 00:00:00
+Data Stored,EU North,80.3,Basic - Storage,02/01/2019 00:00:00
+Data Stored,US West 2,83.95,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,US East 2,87.6,Basic - Storage,02/01/2019 00:00:00
+Data Stored,US West,100.74000000000001,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,US East,83.95,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,AP Southeast,100.74000000000001,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,US West 2,73,Basic - Storage,02/01/2019 00:00:00
+Data Stored,EU West,99.937,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,EU North,92.345,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,US East 2,100.74000000000001,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,AP East,125.925,General Purpose - Storage,02/01/2019 00:00:00
+Data Stored,US West,80.3,Basic - Storage,02/01/2019 00:00:00
+Data Stored,AP East,100.74000000000001,Basic - Storage,02/01/2019 00:00:00
+Data Stored,US East,73,Basic - Storage,02/01/2019 00:00:00
+Data Stored,AP Southeast,80.3,Basic - Storage,02/01/2019 00:00:00
+Data Stored,EU West,86.86999999999999,Basic - Storage,02/01/2019 00:00:00
+Data Stored,AP East,62.999,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US East,41.975,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,EU North,46.208999999999996,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US West,50.370000000000005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,AP Southeast,50.370000000000005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,EU West,50.005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US West 2,41.975,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US East 2,50.370000000000005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,EU North,100.74000000000001,Perf Optimized Storage,08/30/2018 00:00:00
+Data Stored,US West 2,91.25,Perf Optimized Storage,08/30/2018 00:00:00
+Data Stored,US East,91.25,Perf Optimized Storage,08/30/2018 00:00:00
+Data Stored,US East 2,100.37500000000001,Perf Optimized Storage,08/30/2018 00:00:00
+Data Stored,US West,100.74000000000001,Perf Optimized Storage,08/30/2018 00:00:00
+Data Stored,EU West,108.77,Perf Optimized Storage,08/30/2018 00:00:00
+Data Stored,AP Southeast,100.74000000000001,Perf Optimized Storage,08/30/2018 00:00:00
+Data Stored,AP East,125.925,Perf Optimized Storage,08/30/2018 00:00:00
+GRS Data Stored,US East 2,175.2,Backup Storage,02/01/2019 00:00:00
+GRS Data Stored,EU West,173.73999999999998,Backup Storage,02/01/2019 00:00:00
+GRS Data Stored,EU North,160.6,Backup Storage,02/01/2019 00:00:00
+GRS Data Stored,AP East,219,Backup Storage,02/01/2019 00:00:00
+GRS Data Stored,US West 2,146,Backup Storage,02/01/2019 00:00:00
+GRS Data Stored,US West,175.2,Backup Storage,02/01/2019 00:00:00
+GRS Data Stored,AP Southeast,175.2,Backup Storage,02/01/2019 00:00:00
+GRS Data Stored,US East,146,Backup Storage,02/01/2019 00:00:00
+IO Rate Operations,US West,80.3,Basic - Storage,02/01/2019 00:00:00
+IO Rate Operations,US West 2,73,Basic - Storage,02/01/2019 00:00:00
+IO Rate Operations,AP East,100.74000000000001,Basic - Storage,02/01/2019 00:00:00
+IO Rate Operations,EU North,80.3,Basic - Storage,02/01/2019 00:00:00
+IO Rate Operations,AP Southeast,80.3,Basic - Storage,02/01/2019 00:00:00
+IO Rate Operations,EU West,86.86999999999999,Basic - Storage,02/01/2019 00:00:00
+IO Rate Operations,US East,73,Basic - Storage,02/01/2019 00:00:00
+IO Rate Operations,US East 2,87.6,Basic - Storage,02/01/2019 00:00:00
+LRS Data Stored,AP East,109.5,Backup Storage,02/01/2019 00:00:00
+LRS Data Stored,EU West,86.86999999999999,Backup Storage,02/01/2019 00:00:00
+LRS Data Stored,US East,73,Backup Storage,02/01/2019 00:00:00
+LRS Data Stored,US West 2,73,Backup Storage,02/01/2019 00:00:00
+LRS Data Stored,US East 2,87.6,Backup Storage,02/01/2019 00:00:00
+LRS Data Stored,EU North,80.3,Backup Storage,02/01/2019 00:00:00
+LRS Data Stored,AP Southeast,87.6,Backup Storage,02/01/2019 00:00:00
+LRS Data Stored,US West,87.6,Backup Storage,02/01/2019 00:00:00
+vCore,US East 2,29.784000000000002,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,US East,24.82,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,EU West,104.317,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,US East,86.213,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,AP East,129.356,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,US East 2,76.723,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,AP East,47.377,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,EU West,76.066,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,US East,63.948,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,US West 2,63.948,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,US East 2,103.51400000000001,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,US West,74.75200000000001,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,AP Southeast,94.60799999999999,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,EU North,95.703,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,EU North,70.29899999999999,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,AP East,118.26,General Purpose - Compute Gen5,02/01/2019 00:00:00
+vCore,AP Southeast,103.51400000000001,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,US West,32.266000000000005,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,US West,95.703,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,US West 2,86.213,Memory Optimized - Compute Gen5,02/01/2019 00:00:00
+vCore,US West 2,24.82,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,EU West,29.054000000000002,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,AP Southeast,37.96,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,EU North,26.572000000000003,Basic - Compute Gen5,02/01/2019 00:00:00
+vCore,EU West,14.6438,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,AP Southeast,18.987299999999998,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,US West,37.40958,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,US East 2,51.757000000000005,Memory Optimized - Compute Gen4,08/30/2018 00:00:00
+vCore,EU West,38.049060000000004,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,EU North,13.402800000000001,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,US West,47.8515,Memory Optimized - Compute Gen4,08/30/2018 00:00:00
+vCore,AP East,23.7031,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,US East 2,38.3688,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,US East,12.41,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,EU North,35.1714,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,US East,31.974,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,EU North,47.8515,Memory Optimized - Compute Gen4,08/30/2018 00:00:00
+vCore,US East,43.1065,Memory Optimized - Compute Gen4,08/30/2018 00:00:00
+vCore,US West,16.133000000000003,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,US West 2,12.41,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,AP East,64.678,Memory Optimized - Compute Gen4,08/30/2018 00:00:00
+vCore,US West 2,31.974,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,US West 2,43.1065,Memory Optimized - Compute Gen4,08/30/2018 00:00:00
+vCore,AP East,59.151900000000005,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,EU West,52.1585,Memory Optimized - Compute Gen4,08/30/2018 00:00:00
+vCore,US East 2,14.892000000000001,Basic - Compute Gen4,08/30/2018 00:00:00
+vCore,AP Southeast,47.32152000000001,General Purpose - Compute Gen4,08/30/2018 00:00:00
+vCore,AP Southeast,51.757000000000005,Memory Optimized - Compute Gen4,08/30/2018 00:00:00

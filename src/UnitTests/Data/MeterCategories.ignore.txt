@@ -1,0 +1,117 @@
+
+// Categories listed will be ignored
+
+Advanced Data Security
+Advanced Threat Protection
+API Management
+App Center
+Application Gateway
+Application Insights
+Automation
+Azure Active Directory B2C
+Azure Active Directory Domain Services
+Azure Analysis Services
+Azure API for FHIR
+Azure App Service
+Azure Bastion
+Azure Blockchain
+Azure Bot Service
+Azure Cognitive Search
+Azure Cosmos DB
+Azure Data Explorer
+Azure Data Factory
+Azure Data Factory v2
+Azure Data Share
+Azure Database for MariaDB
+Azure Database for MySQL
+Azure Database for PostgreSQL
+Azure Database Migration Service
+Azure Databricks
+Azure DDOS Protection
+Azure DevOps
+Azure DNS
+Azure Firewall
+Azure Firewall Manager
+Azure Front Door Service
+Azure Kubernetes Service
+Azure Lab Services
+Azure Machine Learning
+Azure Maps
+Azure Monitor
+Azure NetApp Files
+Azure Remote Rendering
+Azure Site Recovery
+Azure Spring Cloud
+Azure Stack
+Azure Stack Edge
+Azure Stack Hub
+Azure Synapse Analytics
+Backup
+Bandwidth
+BizTalk Services
+Cloud Services
+Cognitive Services
+Container Instances
+Container Registry
+Content Delivery Network
+Data Box
+Data Catalog
+Data Lake Analytics
+Data Lake Store
+Data Services
+Datacenter Capacity
+Digital Twins
+Dynamics 365 for Customer Insights
+Event Grid
+Event Hubs
+ExpressRoute
+Functions
+GitHub
+HDInsight
+HPCCache
+Insight and Analytics
+IoT Central
+IoT Hub
+Key Vault
+Load Balancer
+Log Analytics
+Logic Apps
+Machine Learning service
+Machine Learning Service
+Machine Learning Studio
+Media Services
+Microsoft Azure Peering Service
+Microsoft Genomics
+Multi-Factor Authentication
+Network Watcher
+Notification Hubs
+Power BI
+Power BI Embedded
+Private Mobile Network
+Redis Cache
+Scheduler
+Security Center
+Sentinel
+Service Bus
+Service Fabric
+Service Fabric Mesh
+SignalR
+Specialized Compute
+SQL Data Warehouse
+SQL Database
+SQL DB Edge
+SQL Server Stretch Database
+Storage
+StorSimple
+Stream Analytics
+Time Series Insights
+Traffic Manager
+Virtual Machines
+Virtual Machines Licenses
+Virtual Network
+Virtual WAN
+Visual Studio Online
+Visual Studio Subscription
+VPN Gateway
+Windows 10 IoT Core Services
+Xamarin University

@@ -1,0 +1,49 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+vCore,US West 2,70.153,Wrangling Data Flow - Compute Optimized,03/01/2020 00:00:00
+vCore,US West 2,140.3425,Data Flow - Compute Optimized,03/01/2020 00:00:00
+vCore,EU West,251.6675,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,US West 2,187.7925,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,US East,140.3425,Data Flow - Compute Optimized,12/01/2019 00:00:00
+vCore,US West 2,237.0675,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,AP East,266.26750000000004,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,AP East,148.92,Data Flow - Compute Optimized,12/01/2019 00:00:00
+vCore,EU North,144.54000000000002,Data Flow - Compute Optimized,12/01/2019 00:00:00
+vCore,US East,199.4725,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,AP Southeast,203.67000000000002,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,US East 2,237.0675,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,US West,148.19,Data Flow - Compute Optimized,12/01/2019 00:00:00
+vCore,EU North,193.9975,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,EU West,195.64000000000001,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,EU North,250.2075,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,AP East,224.10999999999999,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,US West,196.9175,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,AP Southeast,252.21499999999997,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,EU West,144.905,Data Flow - Compute Optimized,12/01/2019 00:00:00
+vCore,US East,250.2075,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,US West,250.025,Data Flow - Memory Optimized,12/01/2019 00:00:00
+vCore,US East 2,187.7925,Data Flow - General Purpose,12/01/2019 00:00:00
+vCore,AP Southeast,145.27,Data Flow - Compute Optimized,12/01/2019 00:00:00
+vCore,US East 2,140.3425,Data Flow - Compute Optimized,12/01/2019 00:00:00
+vCore,AP East,133.15200000000002,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,US East,125.122,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,US West,98.47699999999999,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00
+vCore,US West 2,118.55199999999999,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,EU North,72.27000000000001,Wrangling Data Flow - Compute Optimized,09/30/2019 00:00:00
+vCore,US East 2,70.153,Wrangling Data Flow - Compute Optimized,09/30/2019 00:00:00
+vCore,US West 2,93.878,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00
+vCore,EU North,97.017,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00
+vCore,EU West,72.489,Wrangling Data Flow - Compute Optimized,09/30/2019 00:00:00
+vCore,US West,125.049,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,US East,70.153,Wrangling Data Flow - Compute Optimized,09/30/2019 00:00:00
+vCore,US East,99.718,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00
+vCore,AP Southeast,101.83500000000001,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00
+vCore,AP Southeast,72.635,Wrangling Data Flow - Compute Optimized,09/30/2019 00:00:00
+vCore,US East 2,118.55199999999999,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,AP East,74.46,Wrangling Data Flow - Compute Optimized,09/30/2019 00:00:00
+vCore,US East 2,93.878,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00
+vCore,EU West,125.852,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,EU North,125.122,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,AP East,112.05499999999999,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00
+vCore,AP Southeast,126.144,Wrangling Data Flow - Memory Optimized,09/30/2019 00:00:00
+vCore,US West,74.095,Wrangling Data Flow - Compute Optimized,09/30/2019 00:00:00
+vCore,EU West,97.82000000000001,Wrangling Data Flow - General Purpose,09/30/2019 00:00:00

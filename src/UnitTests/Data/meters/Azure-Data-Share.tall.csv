@@ -1,0 +1,13 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Dataset Snapshots,US East 2,36.5,,12/01/2019 00:00:00
+Dataset Snapshots,EU North,36.5,,12/01/2019 00:00:00
+Dataset Snapshots,US East,36.5,,12/01/2019 00:00:00
+Dataset Snapshots,US West 2,36.5,,12/01/2019 00:00:00
+Dataset Snapshots,AP Southeast,36.5,,12/01/2019 00:00:00
+Dataset Snapshots,EU West,36.5,,12/01/2019 00:00:00
+Snapshot Execution - vCore,US East,365,,12/01/2019 00:00:00
+Snapshot Execution - vCore,EU North,365,,12/01/2019 00:00:00
+Snapshot Execution - vCore,US West 2,365,,12/01/2019 00:00:00
+Snapshot Execution - vCore,US East 2,365,,06/10/2019 00:00:00
+Snapshot Execution - vCore,EU West,365,,06/10/2019 00:00:00
+Snapshot Execution - vCore,AP Southeast,365,,06/10/2019 00:00:00

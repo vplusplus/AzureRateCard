@@ -1,0 +1,313 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Data Stored,US West,219,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,US West 2,182.5,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,AP Southeast,219,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,EU North,200.75000000000003,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,AP East,273.75,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,US East 2,182.5,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,US East,182.5,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,EU West,217.17499999999998,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+Data Stored,US West,100.74000000000001,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,US East 2,83.95,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,US East,83.95,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,EU North,92.345,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,AP Southeast,100.74000000000001,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,US West 2,83.95,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,AP East,125.925,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,EU West,99.9005,Managed Instance General Purpose - Storage,10/01/2018 00:00:00
+Data Stored,AP East,109.5,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,AP East,109.5,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,AP Southeast,87.6,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US West,87.6,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,EU North,80.3,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,EU West,86.86999999999999,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US East 2,73,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US East,73,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US East,73,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,EU West,86.86999999999999,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US East 2,73,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US West 2,73,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US West,87.6,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,AP Southeast,87.6,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,EU North,80.3,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US West 2,73,SingleDB Hyperscale - Storage,09/04/2018 00:00:00
+Data Stored,US East 2,182.5,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+Data Stored,AP East,125.925,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+Data Stored,AP Southeast,322.66,Premium - Storage,08/01/2018 00:00:00
+Data Stored,AP Southeast,161.33,Standard - Storage,08/01/2018 00:00:00
+Data Stored,US West,219,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+Data Stored,US West,100.74000000000001,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+Data Stored,US West,161.33,Standard - Storage,08/01/2018 00:00:00
+Data Stored,AP East,273.75,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+Data Stored,EU North,200.75000000000003,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+Data Stored,AP East,217.17499999999998,Standard - Storage,08/01/2018 00:00:00
+Data Stored,EU North,148.92,Standard - Storage,08/01/2018 00:00:00
+Data Stored,US West 2,124.10000000000001,Standard - Storage,08/01/2018 00:00:00
+Data Stored,EU West,322.66,Premium - Storage,08/01/2018 00:00:00
+Data Stored,US East 2,148.92,Standard - Storage,08/01/2018 00:00:00
+Data Stored,EU North,297.84,Premium - Storage,08/01/2018 00:00:00
+Data Stored,AP East,434.34999999999997,Premium - Storage,08/01/2018 00:00:00
+Data Stored,EU North,92.345,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+Data Stored,US West 2,248.20000000000002,Premium - Storage,08/01/2018 00:00:00
+Data Stored,US West,322.66,Premium - Storage,08/01/2018 00:00:00
+Data Stored,EU West,99.9005,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+Data Stored,US East,124.10000000000001,Standard - Storage,08/01/2018 00:00:00
+Data Stored,EU West,161.33,Standard - Storage,08/01/2018 00:00:00
+Data Stored,AP Southeast,219,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+Data Stored,AP Southeast,100.74000000000001,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+Data Stored,US East 2,83.95,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+Data Stored,US East,248.20000000000002,Premium - Storage,08/01/2018 00:00:00
+Data Stored,US East 2,297.84,Premium - Storage,08/01/2018 00:00:00
+Data Stored,EU West,217.17499999999998,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+Data Stored,US East,83.95,Single/Elastic Pool General Purpose - Storage,02/28/2018 00:00:00
+Data Stored,US West 2,182.5,Single/Elastic Pool Business Critical - Storage,02/28/2018 00:00:00
+Data Stored,US East,182.5,Single/Elastic Pool Business Critical - Storage,02/28/2018 00:00:00
+Data Stored,US West 2,83.95,Single/Elastic Pool General Purpose - Storage,02/28/2018 00:00:00
+IO Rate Operations,AP East,219,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,US West,175.2,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,US East 2,146,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,US West 2,146,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,US East,146,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,EU North,160.6,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,AP Southeast,175.2,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,EU West,173.73999999999998,SingleDB Hyperscale - Storage,07/01/2019 00:00:00
+IO Rate Operations,AP Southeast,175.2,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,US West 2,146,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,EU North,160.6,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,AP East,219,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,US East 2,146,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,US West,175.2,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,US East,146,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,EU West,173.73999999999998,Managed Instance Business Critical - Storage,12/01/2018 00:00:00
+IO Rate Operations,US East,73,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,US West 2,146,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,AP Southeast,175.2,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,EU North,80.3,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,US West 2,73,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,AP East,109.5,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,US East,146,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,EU West,86.86999999999999,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,US East 2,73,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,EU North,160.6,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,AP Southeast,87.6,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,US East 2,146,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,US West,87.6,Managed Instance Hyperscale - Storage,09/04/2018 00:00:00
+IO Rate Operations,EU West,173.73999999999998,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,AP East,219,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,US West,175.2,Managed Instance General Purpose - Storage,09/04/2018 00:00:00
+IO Rate Operations,EU West,173.73999999999998,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,AP East,219,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,US East 2,146,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+IO Rate Operations,US West 2,146,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,US West,175.2,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,AP Southeast,175.2,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,EU North,160.6,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+IO Rate Operations,AP East,219,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+IO Rate Operations,EU West,173.73999999999998,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+IO Rate Operations,US West,175.2,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+IO Rate Operations,EU North,160.6,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,AP Southeast,175.2,Single/Elastic Pool Business Critical - Storage,08/01/2018 00:00:00
+IO Rate Operations,US East 2,146,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,US East,146,Single/Elastic Pool General Purpose - Storage,08/01/2018 00:00:00
+IO Rate Operations,US West 2,146,Single/Elastic Pool Business Critical - Storage,02/28/2018 00:00:00
+IO Rate Operations,US East,146,Single/Elastic Pool Business Critical - Storage,02/28/2018 00:00:00
+LRS Data Stored,US East,18.25,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,US West,21.9,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,US East 2,18.25,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,EU North,20.075,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,US West 2,18.25,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,AP Southeast,21.9,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,EU West,21.754,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,AP East,27.375,LTR Backup Storage,12/01/2018 00:00:00
+LRS Data Stored,AP East,109.5,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,EU North,80.3,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,US West 2,73,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,AP Southeast,87.6,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,US East,73,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,US East 2,73,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,EU West,86.86999999999999,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,US West,87.6,Managed Instance PITR Backup Storage,10/01/2018 00:00:00
+LRS Data Stored,EU West,86.86999999999999,Single/Elastic Pool PITR Backup Storage,08/01/2018 00:00:00
+LRS Data Stored,AP East,109.5,Single/Elastic Pool PITR Backup Storage,08/01/2018 00:00:00
+LRS Data Stored,AP Southeast,87.6,Single/Elastic Pool PITR Backup Storage,08/01/2018 00:00:00
+LRS Data Stored,EU North,80.3,Single/Elastic Pool PITR Backup Storage,08/01/2018 00:00:00
+LRS Data Stored,US West,87.6,Single/Elastic Pool PITR Backup Storage,08/01/2018 00:00:00
+LRS Data Stored,US East 2,73,Single/Elastic Pool PITR Backup Storage,08/01/2018 00:00:00
+LRS Data Stored,US West 2,73,Single/Elastic Pool PITR Backup Storage,02/28/2018 00:00:00
+LRS Data Stored,US East,73,Single/Elastic Pool PITR Backup Storage,02/28/2018 00:00:00
+RA-GRS Data Stored,US West,175.2,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,AP Southeast,175.2,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,AP East,219,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,EU North,160.6,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,US West 2,146,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,US East 2,146,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,US East,146,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,EU West,173.73999999999998,Managed Instance PITR Backup Storage,12/11/2018 00:00:00
+RA-GRS Data Stored,US East,36.5,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,US West,43.8,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,EU West,43.434999999999995,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,US West 2,36.5,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,AP East,54.75,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,US East 2,36.5,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,AP Southeast,43.8,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,EU North,40.15,LTR Backup Storage,12/01/2018 00:00:00
+RA-GRS Data Stored,US West,175.2,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+RA-GRS Data Stored,EU North,160.6,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+RA-GRS Data Stored,US West 2,146,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+RA-GRS Data Stored,AP Southeast,175.2,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+RA-GRS Data Stored,US East,146,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+RA-GRS Data Stored,AP East,219,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+RA-GRS Data Stored,US East 2,146,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+RA-GRS Data Stored,EU West,173.73999999999998,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+vCore,US East 2,380.88334000000003,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,US West 2,380.88334000000003,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,AP Southeast,453.25116,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,US West,418.97182000000004,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,AP East,567.51587,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,EU West,418.97182000000004,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,EU North,388.50089,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,AP Southeast,453.25116,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,US East,380.88334000000003,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,US West,418.97182000000004,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,US East 2,380.88334000000003,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,AP East,567.51587,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,EU North,388.50089,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,EU West,418.97182000000004,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,US East,380.88334000000003,Single General Purpose - Serverless - Compute Gen5,01/01/2020 00:00:00
+vCore,US West 2,380.88334000000003,Single General Purpose - Serverless - Compute Gen4,01/01/2020 00:00:00
+vCore,US East,48.7567,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,US East 2,612.75543,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,US West 2,612.75543,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,EU West,53.63237,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,AP Southeast,58.020399999999995,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,US West,674.0309,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,EU West,674.0309,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,EU North,625.01067,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,EU North,49.73198000000001,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,US West,53.63237,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,US East,612.75543,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,AP East,913.0051599999999,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,US West 2,48.7567,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,AP Southeast,729.1787499999999,Single/Elastic Pool Business Critical - Compute M Series,10/10/2019 00:00:00
+vCore,AP East,72.64741,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,US East 2,48.7567,Single/Elastic Pool General Purpose - Compute FSv2 Series,10/10/2019 00:00:00
+vCore,US West,146.67597999999998,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,EU North,136.00849,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,US East 2,133.34179999999998,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,EU North,136.00849,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,US West 2,133.34179999999998,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,US West 2,133.34179999999998,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,AP East,198.67899,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,US East,133.34179999999998,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,EU West,146.67597999999998,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,US East,133.34179999999998,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,AP East,198.67899,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,EU West,146.67597999999998,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,US West,146.67597999999998,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,AP Southeast,158.67645,SingleDB Hyperscale - Compute Gen4,07/01/2019 00:00:00
+vCore,US East 2,133.34179999999998,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,AP Southeast,158.67645,SingleDB Hyperscale - Compute Gen5,07/01/2019 00:00:00
+vCore,EU North,226.68252,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,EU West,244.46167,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,US East,222.23755,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,AP Southeast,264.46294,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,US West,244.46167,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,US West 2,222.23755,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,US East,222.23755,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,US East 2,222.23755,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,EU North,226.68252,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,US East 2,222.23755,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,EU West,244.46167,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,AP Southeast,264.46294,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,AP East,331.13384,Managed Instance Business Critical - Compute Gen5,12/01/2018 00:00:00
+vCore,AP East,331.13384,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,US West,244.46167,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,US West 2,222.23755,Managed Instance Business Critical - Compute Gen4,12/01/2018 00:00:00
+vCore,US West,122.23047,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,AP Southeast,132.23147,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,US East 2,111.11913999999999,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,EU North,113.34126,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,AP East,165.56692,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,US East,111.11913999999999,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,AP East,165.56692,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,AP Southeast,132.23147,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,EU West,122.23047,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,US West 2,111.11913999999999,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,EU West,122.23047,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,US East 2,111.11913999999999,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,US West,122.23047,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,US East,111.11913999999999,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,US West 2,111.11913999999999,Managed Instance General Purpose - Compute Gen5,10/01/2018 00:00:00
+vCore,EU North,113.34126,Managed Instance General Purpose - Compute Gen4,10/01/2018 00:00:00
+vCore,US East,66.67089999999999,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,EU West,73.33798999999999,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,AP Southeast,79.33786,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,US East,66.67089999999999,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,EU North,68.00388,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,AP Southeast,79.33786,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,US West 2,66.67089999999999,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,AP East,99.33913000000001,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,EU West,73.33798999999999,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,US West 2,66.67089999999999,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,EU North,68.00388,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,US West,73.33798999999999,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,AP East,99.33913000000001,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,US East 2,66.67089999999999,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,US West,73.33798999999999,Managed Instance Hyperscale - Compute Gen5,09/04/2018 00:00:00
+vCore,US East 2,66.67089999999999,Managed Instance Hyperscale - Compute Gen4,09/04/2018 00:00:00
+vCore,AP Southeast,264.46294,Single/Elastic Pool Business Critical-Compute Gen5,08/01/2018 00:00:00
+vCore,US West,244.46167,Single/Elastic Pool Business Critical-Compute Gen4,08/01/2018 00:00:00
+vCore,EU West,244.46167,Single/Elastic Pool Business Critical-Compute Gen5,08/01/2018 00:00:00
+vCore,EU West,122.23047,Single/Elastic Pool General Purpose - Compute Gen5,08/01/2018 00:00:00
+vCore,US East 2,111.11841,Single/Elastic Pool General Purpose - Compute Gen4,08/01/2018 00:00:00
+vCore,US East 2,222.23755,Single/Elastic Pool Business Critical-Compute Gen5,08/01/2018 00:00:00
+vCore,EU North,226.68252,Single/Elastic Pool Business Critical-Compute Gen5,08/01/2018 00:00:00
+vCore,EU North,113.34053,Single/Elastic Pool General Purpose - Compute Gen5,08/01/2018 00:00:00
+vCore,AP East,165.56619,Single/Elastic Pool General Purpose - Compute Gen4,08/01/2018 00:00:00
+vCore,AP East,165.56619,Single/Elastic Pool General Purpose - Compute Gen5,08/01/2018 00:00:00
+vCore,EU West,122.23047,Single/Elastic Pool General Purpose - Compute Gen4,08/01/2018 00:00:00
+vCore,AP Southeast,132.23074,Single/Elastic Pool General Purpose - Compute Gen4,08/01/2018 00:00:00
+vCore,AP East,331.13384,Single/Elastic Pool Business Critical-Compute Gen5,08/01/2018 00:00:00
+vCore,AP Southeast,132.23074,Single/Elastic Pool General Purpose - Compute Gen5,08/01/2018 00:00:00
+vCore,US West,122.23047,Single/Elastic Pool General Purpose - Compute Gen4,08/01/2018 00:00:00
+vCore,US East 2,222.23755,Single/Elastic Pool Business Critical-Compute Gen4,08/01/2018 00:00:00
+vCore,EU North,113.34053,Single/Elastic Pool General Purpose - Compute Gen4,08/01/2018 00:00:00
+vCore,EU West,244.46167,Single/Elastic Pool Business Critical-Compute Gen4,08/01/2018 00:00:00
+vCore,US West,244.46167,Single/Elastic Pool Business Critical-Compute Gen5,08/01/2018 00:00:00
+vCore,US East 2,111.11841,Single/Elastic Pool General Purpose - Compute Gen5,08/01/2018 00:00:00
+vCore,AP East,331.13384,Single/Elastic Pool Business Critical-Compute Gen4,08/01/2018 00:00:00
+vCore,US West,122.23047,Single/Elastic Pool General Purpose - Compute Gen5,08/01/2018 00:00:00
+vCore,AP Southeast,264.46294,Single/Elastic Pool Business Critical-Compute Gen4,08/01/2018 00:00:00
+vCore,EU North,226.68252,Single/Elastic Pool Business Critical-Compute Gen4,08/01/2018 00:00:00
+vCore,US West 2,222.23755,Single/Elastic Pool Business Critical-Compute Gen4,02/28/2018 00:00:00
+vCore,US East,111.11841,Single/Elastic Pool General Purpose - Compute Gen4,02/28/2018 00:00:00
+vCore,US East,222.23755,Single/Elastic Pool Business Critical-Compute Gen5,02/28/2018 00:00:00
+vCore,US East,222.23755,Single/Elastic Pool Business Critical-Compute Gen4,02/28/2018 00:00:00
+vCore,US West 2,222.23755,Single/Elastic Pool Business Critical-Compute Gen5,02/28/2018 00:00:00
+vCore,US West 2,111.11841,Single/Elastic Pool General Purpose - Compute Gen5,02/28/2018 00:00:00
+vCore,US West 2,111.11841,Single/Elastic Pool General Purpose - Compute Gen4,02/28/2018 00:00:00
+vCore,US East,111.11841,Single/Elastic Pool General Purpose - Compute Gen5,02/28/2018 00:00:00
+ZRS Data Stored,AP Southeast,109.5,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,US West 2,91.25,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,US East,91.25,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,US East 2,91.25,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,EU North,100.74000000000001,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,US West,109.5,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,AP East,137.24,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,EU West,108.77,Managed Instance PITR Backup Storage,11/19/2019 00:00:00
+ZRS Data Stored,AP Southeast,27.375,LTR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,AP East,137.24,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,EU North,25.112,LTR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US East 2,91.25,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,AP East,34.236999999999995,LTR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US West 2,22.849,LTR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,EU North,100.74000000000001,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US East,22.849,LTR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,EU West,108.77,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US West,27.375,LTR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,AP Southeast,109.5,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US East 2,22.849,LTR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US East,91.25,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US West 2,91.25,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,US West,109.5,Single/Elastic Pool PITR Backup Storage,10/11/2018 00:00:00
+ZRS Data Stored,EU West,27.156,LTR Backup Storage,10/11/2018 00:00:00

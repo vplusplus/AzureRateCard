@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using CsvHelper;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
+using Newtonsoft.Json;
+using CsvHelper;
+using CsvHelper.Configuration;
 
 namespace UnitTests
 {
@@ -55,7 +54,7 @@ namespace UnitTests
             return null == something ? null : JsonConvert.SerializeObject(something, Formatting.Indented);
         }
 
-        public static string PrettyJson(this string json)
+        public static string ToPrettyJson(this string json)
         {
             // Pretty inefficient. 
             // Good enough for testing.
@@ -65,21 +64,40 @@ namespace UnitTests
                 : JsonConvert.SerializeObject(JsonConvert.DeserializeObject(json), Formatting.Indented);
         }
 
+        public static void SaveAsText(this string something, string fileName)
+        {
+            var folder = Path.GetDirectoryName(fileName);
+            if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
+            File.WriteAllText(fileName, something);
+        }
 
-
-        public static void SaveAsCsv<T>(this IEnumerable<T> items, string csvFileName)
+        public static void SaveAsCsv<T>(this IEnumerable<T> items, string csvFileName, ClassMap map = null)
         {
             if (null == items) throw new ArgumentNullException(nameof(items));
             if (null == csvFileName) throw new ArgumentNullException(nameof(csvFileName));
 
+            var dir = Path.GetDirectoryName(csvFileName);
+            if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
+
             using (var writer = new StreamWriter(csvFileName))
             using (var csvWriter = new CsvWriter(writer, CultureInfo.InvariantCulture))
             {
+                if (null != map) csvWriter.Configuration.RegisterClassMap(map);
                 csvWriter.WriteRecords(items);
             }
         }
 
+        public static bool ContainsAny(this string something, string[] set)
+        {
+            return set.Any(x => something.Contains(x));
+        }
 
+        public static TValue GetValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, TValue defaultValue)
+        {
+            return dictionary.TryGetValue(key, out var value)
+                ? value
+                : defaultValue;
+        }
     }
 }
 

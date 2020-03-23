@@ -1,0 +1,13 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Data Ingestion,EU West,2182.7000000000003,,12/15/2017 00:00:00
+Data Ingestion,AP Southeast,2182.7000000000003,,12/15/2017 00:00:00
+Data Ingestion,AP East,2941.9,,12/15/2017 00:00:00
+Data Ingestion,EU North,2014.8,,12/15/2017 00:00:00
+Data Ingestion,US East 2,2014.8,,12/15/2017 00:00:00
+Data Ingestion,US West,2182.7000000000003,,12/15/2017 00:00:00
+Data Retention,EU West,94.9,,12/15/2017 00:00:00
+Data Retention,EU North,87.6,,12/15/2017 00:00:00
+Data Retention,US East 2,87.6,,12/15/2017 00:00:00
+Data Retention,US West,94.9,,12/15/2017 00:00:00
+Data Retention,AP East,131.4,,12/15/2017 00:00:00
+Data Retention,AP Southeast,94.9,,12/15/2017 00:00:00

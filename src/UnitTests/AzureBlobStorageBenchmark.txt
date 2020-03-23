@@ -1,0 +1,68 @@
+﻿
+Azure Storage Standard and Premium Blob Storage.
+20MB File
+Download using WebClient.
+From EAST US2 to Central Jersey.
+
+STD #0 3,178 ms. 23,106 KB
+STD #1 2,685 ms. 23,106 KB
+STD #2 3,001 ms. 23,106 KB
+STD #3 3,069 ms. 23,106 KB
+STD #4 2,568 ms. 23,106 KB
+STD #5 2,199 ms. 23,106 KB
+STD #6 3,071 ms. 23,106 KB
+STD #7 3,503 ms. 23,106 KB
+STD #8 3,465 ms. 23,106 KB
+STD #9 3,056 ms. 23,106 KB
+
+PRE #0 3,606 ms. 23,106 KB
+PRE #1 2,989 ms. 23,106 KB
+PRE #2 3,082 ms. 23,106 KB
+PRE #3 3,582 ms. 23,106 KB
+PRE #4 3,270 ms. 23,106 KB
+PRE #5 3,790 ms. 23,106 KB
+PRE #6 3,086 ms. 23,106 KB
+PRE #7 3,738 ms. 23,106 KB
+PRE #8 3,644 ms. 23,106 KB
+PRE #9 3,165 ms. 23,106 KB
+
+/*
+
+        [TestMethod]
+        public async Task LoadFromWebTests()
+        {
+            var urlStandard = "https://azratecard.z20.web.core.windows.net/data/RateCard.json";
+            var urlPremium = "https://azratecardpremium.z20.web.core.windows.net/data/RateCard.json";
+
+            for (int i=0; i<10; i++)
+            {
+                var timer = Stopwatch.StartNew();
+                var json = await LoadStringFromWeb(urlStandard);
+                timer.Stop();
+                Console.WriteLine($"STD #{i} {timer.Elapsed.TotalMilliseconds:#,0} ms. {json.Length / 1024:#,0} KB");
+
+                timer = Stopwatch.StartNew();
+                json = await LoadStringFromWeb(urlPremium);
+                timer.Stop();
+                Console.WriteLine($"PRE #{i} {timer.Elapsed.TotalMilliseconds:#,0} ms. {json.Length / 1024:#,0} KB");
+            }
+        }
+
+        public static async Task<T> LoadJsonFromWeb<T>(string url)
+        {
+            using(var http = new HttpClient())
+            {
+                var json = await http.GetStringAsync(url);
+                return (T)JsonConvert.DeserializeObject<T>(json);
+            }
+        }
+
+        public static async Task<string> LoadStringFromWeb(string url)
+        {
+            using (var http = new HttpClient())
+            {
+                return await http.GetStringAsync(url);
+            }
+        }
+
+*/

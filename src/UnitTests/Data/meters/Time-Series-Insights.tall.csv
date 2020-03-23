@@ -1,0 +1,15 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Additional Data Processing,AP East,226.3,,05/30/2019 00:00:00
+Additional Data Processing,AP Southeast,189.8,,05/30/2019 00:00:00
+Cold Queries,AP East,11.315,,05/30/2019 00:00:00
+Cold Queries,AP Southeast,9.855,,05/30/2019 00:00:00
+Data Processing,AP Southeast,37.96,,09/20/2019 00:00:00
+Data Processing,AP East,45.99,,05/30/2019 00:00:00
+Metadata Storage,AP Southeast,37.96,,09/20/2019 00:00:00
+Metadata Storage,AP East,45.26,,05/30/2019 00:00:00
+S1 Unit,AP Southeast,4591.7,,06/10/2019 00:00:00
+S1 Unit,AP East,5475,,06/10/2019 00:00:00
+S2 Unit,AP Southeast,41325.3,,06/10/2019 00:00:00
+S2 Unit,AP East,49275,,06/10/2019 00:00:00
+Warm Storage,AP Southeast,2847,,09/20/2019 00:00:00
+Warm Storage,AP East,3394.5000000000005,,05/30/2019 00:00:00

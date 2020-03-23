@@ -1,0 +1,97 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+C0 Cache Instance,US West 2,20.075,Standard,02/28/2019 00:00:00
+C0 Cache Instance,AP East,20.075,Standard,02/28/2019 00:00:00
+C0 Cache Instance,EU North,20.075,Standard,02/28/2019 00:00:00
+C0 Cache Instance,US East,20.075,Standard,02/28/2019 00:00:00
+C0 Cache Instance,EU West,20.075,Standard,02/28/2019 00:00:00
+C0 Cache Instance,AP Southeast,20.075,Standard,02/28/2019 00:00:00
+C0 Cache Instance,US West,20.075,Standard,02/28/2019 00:00:00
+C0 Cache Instance,US East 2,20.075,Standard,02/28/2019 00:00:00
+C1 Cache Instance,AP East,50.370000000000005,Standard,02/28/2019 00:00:00
+C1 Cache Instance,AP Southeast,50.370000000000005,Standard,02/28/2019 00:00:00
+C1 Cache Instance,US East,50.370000000000005,Standard,02/28/2019 00:00:00
+C1 Cache Instance,US West 2,50.370000000000005,Standard,02/28/2019 00:00:00
+C1 Cache Instance,EU North,50.370000000000005,Standard,02/28/2019 00:00:00
+C1 Cache Instance,US East 2,50.370000000000005,Standard,02/28/2019 00:00:00
+C1 Cache Instance,US West,50.370000000000005,Standard,02/28/2019 00:00:00
+C1 Cache Instance,EU West,50.370000000000005,Standard,02/28/2019 00:00:00
+C2 Cache Instance,AP Southeast,81.76,Standard,02/28/2019 00:00:00
+C2 Cache Instance,US East,81.76,Standard,02/28/2019 00:00:00
+C2 Cache Instance,US West,81.76,Standard,02/28/2019 00:00:00
+C2 Cache Instance,EU West,81.76,Standard,02/28/2019 00:00:00
+C2 Cache Instance,AP East,81.76,Standard,02/28/2019 00:00:00
+C2 Cache Instance,EU North,81.76,Standard,02/28/2019 00:00:00
+C2 Cache Instance,US West 2,81.76,Standard,02/28/2019 00:00:00
+C2 Cache Instance,US East 2,81.76,Standard,02/28/2019 00:00:00
+C3 Cache Instance,US East,164.25,Standard,02/28/2019 00:00:00
+C3 Cache Instance,US West 2,164.25,Standard,02/28/2019 00:00:00
+C3 Cache Instance,US West,164.25,Standard,02/28/2019 00:00:00
+C3 Cache Instance,EU North,164.25,Standard,02/28/2019 00:00:00
+C3 Cache Instance,US East 2,164.25,Standard,02/28/2019 00:00:00
+C3 Cache Instance,AP Southeast,164.25,Standard,02/28/2019 00:00:00
+C3 Cache Instance,AP East,164.25,Standard,02/28/2019 00:00:00
+C3 Cache Instance,EU West,164.25,Standard,02/28/2019 00:00:00
+C4 Cache Instance,US West 2,191.26000000000002,Standard,02/28/2019 00:00:00
+C4 Cache Instance,US East 2,191.26000000000002,Standard,02/28/2019 00:00:00
+C4 Cache Instance,US East,191.26000000000002,Standard,02/28/2019 00:00:00
+C4 Cache Instance,US West,191.26000000000002,Standard,02/28/2019 00:00:00
+C4 Cache Instance,EU West,191.26000000000002,Standard,02/28/2019 00:00:00
+C4 Cache Instance,AP East,191.26000000000002,Standard,02/28/2019 00:00:00
+C4 Cache Instance,EU North,191.26000000000002,Standard,02/28/2019 00:00:00
+C4 Cache Instance,AP Southeast,191.26000000000002,Standard,02/28/2019 00:00:00
+C5 Cache Instance,US West,383.25,Standard,02/28/2019 00:00:00
+C5 Cache Instance,AP Southeast,383.25,Standard,02/28/2019 00:00:00
+C5 Cache Instance,EU West,383.25,Standard,02/28/2019 00:00:00
+C5 Cache Instance,US East,383.25,Standard,02/28/2019 00:00:00
+C5 Cache Instance,AP East,383.25,Standard,02/28/2019 00:00:00
+C5 Cache Instance,US East 2,383.25,Standard,02/28/2019 00:00:00
+C5 Cache Instance,US West 2,383.25,Standard,02/28/2019 00:00:00
+C5 Cache Instance,EU North,383.25,Standard,02/28/2019 00:00:00
+C6 Cache Instance,US East,766.5,Standard,02/28/2019 00:00:00
+C6 Cache Instance,US West,766.5,Standard,02/28/2019 00:00:00
+C6 Cache Instance,US West 2,766.5,Standard,02/28/2019 00:00:00
+C6 Cache Instance,US East 2,766.5,Standard,02/28/2019 00:00:00
+C6 Cache Instance,EU West,766.5,Standard,02/28/2019 00:00:00
+C6 Cache Instance,AP Southeast,766.5,Standard,02/28/2019 00:00:00
+C6 Cache Instance,AP East,766.5,Standard,02/28/2019 00:00:00
+C6 Cache Instance,EU North,766.5,Standard,02/28/2019 00:00:00
+P1 Cache Instance,AP East,202.21,Premium,02/28/2019 00:00:00
+P1 Cache Instance,AP Southeast,202.21,Premium,02/28/2019 00:00:00
+P1 Cache Instance,US East 2,202.21,Premium,02/28/2019 00:00:00
+P1 Cache Instance,US East,202.21,Premium,02/28/2019 00:00:00
+P1 Cache Instance,US West 2,202.21,Premium,02/28/2019 00:00:00
+P1 Cache Instance,EU West,202.21,Premium,02/28/2019 00:00:00
+P1 Cache Instance,EU North,202.21,Premium,02/28/2019 00:00:00
+P1 Cache Instance,US West,202.21,Premium,02/28/2019 00:00:00
+P2 Cache Instance,EU West,405.15000000000003,Premium,02/28/2019 00:00:00
+P2 Cache Instance,AP Southeast,405.15000000000003,Premium,02/28/2019 00:00:00
+P2 Cache Instance,US East,405.15000000000003,Premium,02/28/2019 00:00:00
+P2 Cache Instance,US West 2,405.15000000000003,Premium,02/28/2019 00:00:00
+P2 Cache Instance,US East 2,405.15000000000003,Premium,02/28/2019 00:00:00
+P2 Cache Instance,EU North,405.15000000000003,Premium,02/28/2019 00:00:00
+P2 Cache Instance,US West,405.15000000000003,Premium,02/28/2019 00:00:00
+P2 Cache Instance,AP East,405.15000000000003,Premium,02/28/2019 00:00:00
+P3 Cache Instance,AP East,809.5699999999999,Premium,02/28/2019 00:00:00
+P3 Cache Instance,US West 2,809.5699999999999,Premium,02/28/2019 00:00:00
+P3 Cache Instance,EU West,809.5699999999999,Premium,02/28/2019 00:00:00
+P3 Cache Instance,US West,809.5699999999999,Premium,02/28/2019 00:00:00
+P3 Cache Instance,AP Southeast,809.5699999999999,Premium,02/28/2019 00:00:00
+P3 Cache Instance,EU North,809.5699999999999,Premium,02/28/2019 00:00:00
+P3 Cache Instance,US East,809.5699999999999,Premium,02/28/2019 00:00:00
+P3 Cache Instance,US East 2,809.5699999999999,Premium,02/28/2019 00:00:00
+P4 Cache Instance,US East,1620.6000000000001,Premium,02/28/2019 00:00:00
+P4 Cache Instance,EU West,1620.6000000000001,Premium,02/28/2019 00:00:00
+P4 Cache Instance,EU North,1620.6000000000001,Premium,02/28/2019 00:00:00
+P4 Cache Instance,AP Southeast,1620.6000000000001,Premium,02/28/2019 00:00:00
+P4 Cache Instance,US West 2,1620.6000000000001,Premium,02/28/2019 00:00:00
+P4 Cache Instance,AP East,1620.6000000000001,Premium,02/28/2019 00:00:00
+P4 Cache Instance,US West,1620.6000000000001,Premium,02/28/2019 00:00:00
+P4 Cache Instance,US East 2,1620.6000000000001,Premium,02/28/2019 00:00:00
+P5 Cache Instance,US West 2,3664.6,Premium,03/01/2020 00:00:00
+P5 Cache Instance,AP East,3664.6,Premium,12/03/2019 00:00:00
+P5 Cache Instance,EU West,3664.6,Premium,12/03/2019 00:00:00
+P5 Cache Instance,US West,3664.6,Premium,12/03/2019 00:00:00
+P5 Cache Instance,EU North,3664.6,Premium,12/03/2019 00:00:00
+P5 Cache Instance,US East 2,3664.6,Premium,12/03/2019 00:00:00
+P5 Cache Instance,AP Southeast,3664.6,Premium,12/03/2019 00:00:00
+P5 Cache Instance,US East,3668.2500000000005,Premium,02/28/2019 00:00:00

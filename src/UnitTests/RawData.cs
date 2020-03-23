@@ -23,7 +23,7 @@ namespace UnitTests
         }
 
         public static IEnumerable<string> AllRegions => LoadRegionNames(Path.Combine(K.DataFolder, "Regions.All.txt"));
-        public static IEnumerable<string> SelectRegions => LoadRegionNames(Path.Combine(K.DataFolder, "Regions.txt"));
+        public static IEnumerable<string> SelectRegions => LoadRegionNames(Path.Combine(K.DataFolder, "Regions.keep.txt"));
         static IReadOnlyList<string> LoadRegionNames(string fileName)
         {
             return File

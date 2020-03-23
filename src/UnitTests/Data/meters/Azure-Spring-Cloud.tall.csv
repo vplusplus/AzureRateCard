@@ -1,0 +1,13 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Standard Overage Memory Duration,EU West,7.738,,10/10/2019 00:00:00
+Standard Overage Memory Duration,US East,6.0225,,10/10/2019 00:00:00
+Standard Overage Memory Duration,AP Southeast,7.738,,10/10/2019 00:00:00
+Standard Overage Memory Duration,US West 2,6.0225,,10/10/2019 00:00:00
+Standard Overage vCPU Duration,US East,57.159,,10/10/2019 00:00:00
+Standard Overage vCPU Duration,US West 2,57.159,,10/10/2019 00:00:00
+Standard Overage vCPU Duration,EU West,73,,10/10/2019 00:00:00
+Standard Overage vCPU Duration,AP Southeast,73,,10/10/2019 00:00:00
+Standard vCPU and Memory Group Duration,EU West,1416.2,,10/10/2019 00:00:00
+Standard vCPU and Memory Group Duration,AP Southeast,1416.2,,10/10/2019 00:00:00
+Standard vCPU and Memory Group Duration,US East,1204.5,,10/10/2019 00:00:00
+Standard vCPU and Memory Group Duration,US West 2,1204.5,,10/10/2019 00:00:00

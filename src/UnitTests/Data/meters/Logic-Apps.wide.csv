@@ -1,0 +1,6 @@
+SKU,SubCategory,AP East,AP Southeast,EU North,EU West,US East,US East 2,US West,US West 2
+Base Units,Integration Service Environment,5613.700000000001,5263.3,5124.599999999999,5263.3,4847.2,4847.2,5263.3,4847.2
+Base Units,Integration Service Environment - Developer,942.43,854.83,819.79,854.83,749.7099999999999,749.7099999999999,854.83,749.7099999999999
+Built-in Actions,,0.0219,,,,,,,
+Scale Units,Integration Service Environment,2803.2,2635.2999999999997,2562.2999999999997,2635.2999999999997,2423.6,2423.6,2635.2999999999997,2423.6
+Standard Connector Actions,,0.09855,,,,,,,

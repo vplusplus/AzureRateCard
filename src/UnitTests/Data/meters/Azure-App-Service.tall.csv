@@ -1,0 +1,233 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+B1,US West 2,12.41,Basic Plan - Linux,06/01/2019 00:00:00
+B1,EU North,13.139999999999999,Basic Plan - Linux,06/01/2019 00:00:00
+B1,US East,12.41,Basic Plan - Linux,06/01/2019 00:00:00
+B1,US East 2,12.41,Basic Plan - Linux,06/01/2019 00:00:00
+B1,AP Southeast,13.139999999999999,Basic Plan - Linux,06/01/2019 00:00:00
+B1,AP East,14.6,Basic Plan - Linux,06/01/2019 00:00:00
+B1,US West,13.139999999999999,Basic Plan - Linux,06/01/2019 00:00:00
+B1,EU West,13.139999999999999,Basic Plan - Linux,06/01/2019 00:00:00
+B2,AP East,28.47,Basic Plan - Linux,06/01/2019 00:00:00
+B2,US West 2,24.82,Basic Plan - Linux,06/01/2019 00:00:00
+B2,US West,26.279999999999998,Basic Plan - Linux,06/01/2019 00:00:00
+B2,US East 2,24.82,Basic Plan - Linux,06/01/2019 00:00:00
+B2,US East,24.82,Basic Plan - Linux,06/01/2019 00:00:00
+B2,AP Southeast,26.279999999999998,Basic Plan - Linux,06/01/2019 00:00:00
+B2,EU West,26.279999999999998,Basic Plan - Linux,06/01/2019 00:00:00
+B2,EU North,25.55,Basic Plan - Linux,06/01/2019 00:00:00
+B3,US West,51.83,Basic Plan - Linux,06/01/2019 00:00:00
+B3,AP East,56.21,Basic Plan - Linux,06/01/2019 00:00:00
+B3,EU West,51.83,Basic Plan - Linux,06/01/2019 00:00:00
+B3,US West 2,48.910000000000004,Basic Plan - Linux,06/01/2019 00:00:00
+B3,AP Southeast,51.83,Basic Plan - Linux,06/01/2019 00:00:00
+B3,US East 2,48.910000000000004,Basic Plan - Linux,06/01/2019 00:00:00
+B3,EU North,51.1,Basic Plan - Linux,06/01/2019 00:00:00
+B3,US East,48.910000000000004,Basic Plan - Linux,06/01/2019 00:00:00
+I1,EU North,208.04999999999998,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,US East 2,243.09,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,EU West,208.04999999999998,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,US West 2,208.04999999999998,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,US West,277.4,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,AP Southeast,208.04999999999998,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,AP East,346.75,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,US East,208.04999999999998,Isolated Plan - Linux,12/01/2018 00:00:00
+I1,AP Southeast,219,Isolated Plan,09/01/2017 00:00:00
+I1,US West 2,219,Isolated Plan,09/01/2017 00:00:00
+I1,US West,292,Isolated Plan,09/01/2017 00:00:00
+I1,AP East,365,Isolated Plan,09/01/2017 00:00:00
+I1,EU North,219,Isolated Plan,09/01/2017 00:00:00
+I1,EU West,219,Isolated Plan,09/01/2017 00:00:00
+I1,US East 2,255.49999999999997,Isolated Plan,09/01/2017 00:00:00
+I1,US East,219,Isolated Plan,09/01/2017 00:00:00
+I12,AP Southeast,976.01,Isolated Plan - Linux,01/16/2020 00:00:00
+I12,AP Southeast,1024.19,Isolated Plan,01/16/2020 00:00:00
+I12,AP East,1032.22,Isolated Plan - Linux,01/16/2020 00:00:00
+I12,AP East,1080.4,Isolated Plan,01/16/2020 00:00:00
+I12,US West 2,963.6,Isolated Plan,12/31/2019 00:00:00
+I12,US East 2,915.42,Isolated Plan - Linux,12/31/2019 00:00:00
+I12,US East,967.98,Isolated Plan - Linux,12/31/2019 00:00:00
+I12,EU North,967.98,Isolated Plan - Linux,12/31/2019 00:00:00
+I12,EU West,973.82,Isolated Plan - Linux,12/31/2019 00:00:00
+I12,EU North,1016.16,Isolated Plan,12/31/2019 00:00:00
+I12,US East 2,963.6,Isolated Plan,12/31/2019 00:00:00
+I12,EU West,1021.9999999999999,Isolated Plan,12/31/2019 00:00:00
+I12,US West 2,915.42,Isolated Plan - Linux,12/31/2019 00:00:00
+I12,US West,1016.16,Isolated Plan,12/31/2019 00:00:00
+I12,US West,967.98,Isolated Plan - Linux,12/31/2019 00:00:00
+I12,US East,1016.16,Isolated Plan,12/31/2019 00:00:00
+I13,AP East,2064.44,Isolated Plan - Linux,01/16/2020 00:00:00
+I13,AP Southeast,1952.7499999999998,Isolated Plan - Linux,01/16/2020 00:00:00
+I13,AP Southeast,2049.11,Isolated Plan,01/16/2020 00:00:00
+I13,AP East,2160.8,Isolated Plan,01/16/2020 00:00:00
+I13,EU North,2031.59,Isolated Plan,12/31/2019 00:00:00
+I13,US West 2,1830.84,Isolated Plan - Linux,12/31/2019 00:00:00
+I13,US West 2,1927.2,Isolated Plan,12/31/2019 00:00:00
+I13,EU West,1948.3700000000001,Isolated Plan - Linux,12/31/2019 00:00:00
+I13,US West,2031.59,Isolated Plan,12/31/2019 00:00:00
+I13,US West,1935.2299999999998,Isolated Plan - Linux,12/31/2019 00:00:00
+I13,EU West,2044.73,Isolated Plan,12/31/2019 00:00:00
+I13,US East 2,1830.84,Isolated Plan - Linux,12/31/2019 00:00:00
+I13,US East 2,1927.2,Isolated Plan,12/31/2019 00:00:00
+I13,US East,2031.59,Isolated Plan,12/31/2019 00:00:00
+I13,EU North,1935.2299999999998,Isolated Plan - Linux,12/31/2019 00:00:00
+I13,US East,1935.2299999999998,Isolated Plan - Linux,12/31/2019 00:00:00
+I14,AP Southeast,3905.4999999999995,Isolated Plan - Linux,01/16/2020 00:00:00
+I14,AP Southeast,4098.22,Isolated Plan,01/16/2020 00:00:00
+I14,AP East,4128.150000000001,Isolated Plan - Linux,01/16/2020 00:00:00
+I14,AP East,4320.87,Isolated Plan,01/16/2020 00:00:00
+I14,US East 2,3661.68,Isolated Plan - Linux,12/31/2019 00:00:00
+I14,EU West,4089.46,Isolated Plan,12/31/2019 00:00:00
+I14,EU North,3870.4599999999996,Isolated Plan - Linux,12/31/2019 00:00:00
+I14,US West 2,3854.4,Isolated Plan,12/31/2019 00:00:00
+I14,US East,4063.18,Isolated Plan,12/31/2019 00:00:00
+I14,US West,3870.4599999999996,Isolated Plan - Linux,12/31/2019 00:00:00
+I14,US East,3870.4599999999996,Isolated Plan - Linux,12/31/2019 00:00:00
+I14,US West,4063.18,Isolated Plan,12/31/2019 00:00:00
+I14,US East 2,3854.4,Isolated Plan,12/31/2019 00:00:00
+I14,EU North,4063.18,Isolated Plan,12/31/2019 00:00:00
+I14,EU West,3896.7400000000002,Isolated Plan - Linux,12/31/2019 00:00:00
+I14,US West 2,3661.68,Isolated Plan - Linux,12/31/2019 00:00:00
+I2,US West 2,416.09999999999997,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,EU North,416.09999999999997,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,AP East,693.5,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,AP Southeast,416.09999999999997,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,US West,554.8,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,US East 2,486.18,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,US East,416.09999999999997,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,EU West,416.09999999999997,Isolated Plan - Linux,12/01/2018 00:00:00
+I2,US West 2,438,Isolated Plan,09/01/2017 00:00:00
+I2,US East 2,510.99999999999994,Isolated Plan,09/01/2017 00:00:00
+I2,EU North,438,Isolated Plan,09/01/2017 00:00:00
+I2,EU West,438,Isolated Plan,09/01/2017 00:00:00
+I2,US West,584,Isolated Plan,09/01/2017 00:00:00
+I2,US East,438,Isolated Plan,09/01/2017 00:00:00
+I2,AP Southeast,438,Isolated Plan,09/01/2017 00:00:00
+I2,AP East,730,Isolated Plan,09/01/2017 00:00:00
+I3,US West,1109.6,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,AP Southeast,832.1999999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,US West 2,832.1999999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,AP East,1387,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,US East 2,972.36,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,EU West,832.1999999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,US East,832.1999999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,EU North,832.1999999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+I3,US West,1168,Isolated Plan,09/01/2017 00:00:00
+I3,EU North,876,Isolated Plan,09/01/2017 00:00:00
+I3,US East,876,Isolated Plan,09/01/2017 00:00:00
+I3,US East 2,1021.9999999999999,Isolated Plan,09/01/2017 00:00:00
+I3,AP East,1460,Isolated Plan,09/01/2017 00:00:00
+I3,EU West,876,Isolated Plan,09/01/2017 00:00:00
+I3,US West 2,876,Isolated Plan,09/01/2017 00:00:00
+I3,AP Southeast,876,Isolated Plan,09/01/2017 00:00:00
+P1 v2,AP Southeast,83.95,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,AP East,90.52,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,US East,73.73,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,EU North,81.03,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,US West,83.95,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,EU West,83.95,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,US West 2,73.73,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,US East 2,73.73,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P1 v2,US West,146,Premium v2 Plan,05/01/2018 00:00:00
+P1 v2,US West 2,146,Premium v2 Plan,05/01/2018 00:00:00
+P1 v2,AP East,146,Premium v2 Plan,05/01/2018 00:00:00
+P1 v2,EU West,146,Premium v2 Plan,05/01/2018 00:00:00
+P1 v2,US East,146,Premium v2 Plan,05/01/2018 00:00:00
+P1 v2,AP Southeast,146,Premium v2 Plan,05/01/2018 00:00:00
+P1 v2,US East 2,146,Premium v2 Plan,05/01/2018 00:00:00
+P1 v2,EU North,146,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,US West,168.63,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,EU North,161.33,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,AP East,180.31,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,US West 2,147.46,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,US East 2,147.46,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,US East,147.46,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,AP Southeast,168.63,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,EU West,168.63,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P2 v2,US East,292,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,EU North,292,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,EU West,292,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,AP East,292,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,US West,292,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,AP Southeast,292,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,US West 2,292,Premium v2 Plan,05/01/2018 00:00:00
+P2 v2,US East 2,292,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,US West,337.26,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,AP Southeast,337.26,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,US West 2,294.19,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,AP East,360.62,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,EU North,322.66,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,EU West,337.26,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,US East 2,294.19,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,US East,294.19,Premium v2 Plan - Linux,08/01/2019 00:00:00
+P3 v2,US East 2,584,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,EU West,584,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,US East,584,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,AP Southeast,584,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,AP East,584,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,EU North,584,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,US West 2,584,Premium v2 Plan,05/01/2018 00:00:00
+P3 v2,US West,584,Premium v2 Plan,05/01/2018 00:00:00
+PC2,US East,118.58558000000001,Premium Windows Container Plan,08/10/2018 00:00:00
+PC2,US West,139.17158,Premium Windows Container Plan,08/10/2018 00:00:00
+PC2,AP Southeast,139.17158,Premium Windows Container Plan,08/10/2018 00:00:00
+PC2,EU West,139.17158,Premium Windows Container Plan,08/10/2018 00:00:00
+PC2,US West 2,118.58558000000001,Premium Windows Container Plan,08/10/2018 00:00:00
+PC2,EU North,132.30957999999998,Premium Windows Container Plan,08/10/2018 00:00:00
+PC2,US East 2,132.30957999999998,Premium Windows Container Plan,08/10/2018 00:00:00
+PC2,AP East,170.05058,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,AP Southeast,278.34316,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,US West,278.34316,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,EU North,264.61915999999997,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,US West 2,237.17116000000001,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,AP East,340.10116,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,US East 2,264.61915999999997,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,EU West,278.34316,Premium Windows Container Plan,08/10/2018 00:00:00
+PC3,US East,237.17116000000001,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,AP East,680.20305,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,US West,556.68705,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,US East,474.34304999999995,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,US West 2,474.34304999999995,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,US East 2,529.23905,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,EU North,529.23905,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,AP Southeast,556.68705,Premium Windows Container Plan,08/10/2018 00:00:00
+PC4,EU West,556.68705,Premium Windows Container Plan,08/10/2018 00:00:00
+S1,US West 2,58.4,Standard Plan - Linux,03/01/2020 00:00:00
+S1,US East,69.35,Standard Plan - Linux,05/11/2018 00:00:00
+S1,AP East,69.35,Standard Plan - Linux,05/11/2018 00:00:00
+S1,AP Southeast,69.35,Standard Plan - Linux,05/11/2018 00:00:00
+S1,US East 2,69.35,Standard Plan - Linux,05/11/2018 00:00:00
+S1,EU North,69.35,Standard Plan - Linux,05/11/2018 00:00:00
+S1,EU West,69.35,Standard Plan - Linux,05/11/2018 00:00:00
+S1,US West,69.35,Standard Plan - Linux,05/11/2018 00:00:00
+S2,US West 2,116.8,Standard Plan - Linux,03/01/2020 00:00:00
+S2,AP East,138.7,Standard Plan - Linux,05/11/2018 00:00:00
+S2,AP Southeast,138.7,Standard Plan - Linux,05/11/2018 00:00:00
+S2,US West,138.7,Standard Plan - Linux,05/11/2018 00:00:00
+S2,US East 2,138.7,Standard Plan - Linux,05/11/2018 00:00:00
+S2,US East,138.7,Standard Plan - Linux,05/11/2018 00:00:00
+S2,EU West,138.7,Standard Plan - Linux,05/11/2018 00:00:00
+S2,EU North,138.7,Standard Plan - Linux,05/11/2018 00:00:00
+S3,US West 2,233.6,Standard Plan - Linux,03/01/2020 00:00:00
+S3,US East 2,277.4,Standard Plan - Linux,05/11/2018 00:00:00
+S3,AP East,277.4,Standard Plan - Linux,05/11/2018 00:00:00
+S3,EU North,277.4,Standard Plan - Linux,05/11/2018 00:00:00
+S3,EU West,277.4,Standard Plan - Linux,05/11/2018 00:00:00
+S3,US East,277.4,Standard Plan - Linux,05/11/2018 00:00:00
+S3,US West,277.4,Standard Plan - Linux,05/11/2018 00:00:00
+S3,AP Southeast,277.4,Standard Plan - Linux,05/11/2018 00:00:00
+Stamp Fee,US West 2,924.91,Isolated Plan - Linux,03/01/2020 00:00:00
+Stamp Fee,US West 2,973.0899999999999,Isolated Plan,03/01/2020 00:00:00
+Stamp Fee,EU West,1071.6399999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+Stamp Fee,US West,1071.6399999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+Stamp Fee,US East,991.34,Isolated Plan - Linux,12/01/2018 00:00:00
+Stamp Fee,AP Southeast,1118.3600000000001,Isolated Plan - Linux,12/01/2018 00:00:00
+Stamp Fee,AP East,1239.54,Isolated Plan - Linux,12/01/2018 00:00:00
+Stamp Fee,US East 2,932.2099999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+Stamp Fee,EU North,1071.6399999999999,Isolated Plan - Linux,12/01/2018 00:00:00
+Stamp Fee,US East,1043.81021,Isolated Plan,09/01/2017 00:00:00
+Stamp Fee,AP East,1304.76404,Isolated Plan,09/01/2017 00:00:00
+Stamp Fee,AP Southeast,1177.41919,Isolated Plan,01/01/2017 00:00:00
+Stamp Fee,US East 2,981.1827799999999,Isolated Plan,01/01/2017 00:00:00
+Stamp Fee,EU North,1128.35954,Isolated Plan,01/01/2017 00:00:00
+Stamp Fee,US West,1128.35954,Isolated Plan,01/01/2017 00:00:00
+Stamp Fee,EU West,1128.35954,Isolated Plan,01/01/2017 00:00:00

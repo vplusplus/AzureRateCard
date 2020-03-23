@@ -1,0 +1,33 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+100 DWUs,EU North,1014.6999999999999,Compute Optimized Gen2,03/12/2019 00:00:00
+100 DWUs,US West 2,876,Compute Optimized Gen2,03/12/2019 00:00:00
+100 DWUs,US East,1102.3,Compute Optimized Gen2,03/12/2019 00:00:00
+100 DWUs,AP Southeast,1321.3,Compute Optimized Gen2,03/12/2019 00:00:00
+100 DWUs,EU West,1102.3,Compute Optimized Gen2,03/12/2019 00:00:00
+100 DWUs,US West,1102.3,Compute Optimized Gen2,03/12/2019 00:00:00
+100 DWUs,US East 2,876,Compute Optimized Gen2,03/12/2019 00:00:00
+100 DWUs,AP East,1501.2450000000001,Compute Optimized Gen2,07/01/2018 00:00:00
+100 DWUs,EU North,1015.576,Compute Optimized Gen1,10/01/2016 00:00:00
+100 DWUs,AP Southeast,1324.658,Compute Optimized Gen1,09/01/2016 00:00:00
+100 DWUs,US East,1103.833,Compute Optimized Gen1,09/01/2016 00:00:00
+100 DWUs,AP East,1501.2450000000001,Compute Optimized Gen1,09/01/2016 00:00:00
+100 DWUs,US East 2,883.081,Compute Optimized Gen1,09/01/2016 00:00:00
+100 DWUs,US West 2,883.081,Compute Optimized Gen1,09/01/2016 00:00:00
+100 DWUs,EU West,1103.833,Compute Optimized Gen1,09/01/2016 00:00:00
+100 DWUs,US West,1103.833,Compute Optimized Gen1,09/01/2016 00:00:00
+Data Stored,EU North,98674.09999999999,Storage,11/01/2018 00:00:00
+Data Stored,US West,98674.09999999999,Storage,11/01/2018 00:00:00
+Data Stored,AP Southeast,98674.09999999999,Storage,11/01/2018 00:00:00
+Data Stored,AP East,108536.40000000001,Storage,11/01/2018 00:00:00
+Data Stored,EU West,108536.40000000001,Storage,11/01/2018 00:00:00
+Data Stored,US East 2,89702.4,Storage,11/01/2018 00:00:00
+Data Stored,US East,98674.09999999999,Storage,11/01/2018 00:00:00
+Data Stored,US West 2,89702.4,Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,US West,87.6,Disaster Recovery Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,AP Southeast,87.6,Disaster Recovery Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,EU West,87.6,Disaster Recovery Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,EU North,87.6,Disaster Recovery Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,AP East,87.6,Disaster Recovery Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,US East,87.6,Disaster Recovery Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,US East 2,87.6,Disaster Recovery Storage,11/01/2018 00:00:00
+RA-GRS Data Stored,US West 2,87.6,Disaster Recovery Storage,11/01/2018 00:00:00

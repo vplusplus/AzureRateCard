@@ -1,0 +1,18 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+RA-GRS Data Stored,EU West,54.019999999999996,,02/01/2020 00:00:00
+RA-GRS Data Stored,US East 2,41.537,,02/01/2020 00:00:00
+RA-GRS Data Stored,US East,41.537,,02/01/2020 00:00:00
+RA-GRS Data Stored,EU North,49.859,,02/01/2020 00:00:00
+RA-GRS Data Stored,AP Southeast,54.019999999999996,,02/01/2020 00:00:00
+RA-GRS Data Stored,AP East,64.386,,02/01/2020 00:00:00
+RA-GRS Data Stored,US West 2,41.537,,02/01/2020 00:00:00
+SAP HANA on Azure VM Protected Instances,EU North,70080,,01/14/2020 00:00:00
+SAP HANA on Azure VM Protected Instances,EU West,75920,,01/14/2020 00:00:00
+SQL Server in Azure VM Protected Instances,US West,23725,,08/10/2018 00:00:00
+SQL Server in Azure VM Protected Instances,AP East,28287.5,,08/10/2018 00:00:00
+SQL Server in Azure VM Protected Instances,US West 2,18250,,08/10/2018 00:00:00
+SQL Server in Azure VM Protected Instances,EU North,21900,,08/10/2018 00:00:00
+SQL Server in Azure VM Protected Instances,US East,18250,,08/10/2018 00:00:00
+SQL Server in Azure VM Protected Instances,AP Southeast,23725,,08/10/2018 00:00:00
+SQL Server in Azure VM Protected Instances,US East 2,18250,,08/10/2018 00:00:00
+SQL Server in Azure VM Protected Instances,EU West,23725,,08/10/2018 00:00:00

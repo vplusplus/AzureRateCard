@@ -1,0 +1,7 @@
+SKU,SubCategory,AP East,AP Southeast,EU North,EU West,US East,US East 2,US West,US West 2
+Basic Transaction Node,Quorum,,1.1680000000000001,1.022,1.1680000000000001,0.9125,,,0.9125
+Basic Validator Node,Quorum,,1.1680000000000001,1.022,1.1680000000000001,0.9125,,,0.9125
+Data Manager Transactions,Quorum,,0.0949,0.0876,0.0949,0.07300000000000001,,,0.07300000000000001
+Standard Transaction Node,Quorum,,5.037,4.3069999999999995,4.891,3.869,,,3.869
+Standard Validator Node,Quorum,,5.037,4.3069999999999995,4.891,3.869,,,3.869
+Storage,Quorum,,47.45,40.15,45.625,36.5,,,36.5

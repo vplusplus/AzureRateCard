@@ -1,0 +1,73 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Capacity Units,EU West,5.84,Standard v2,05/09/2019 00:00:00
+Capacity Units,AP Southeast,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,AP East,5.84,Standard v2,05/09/2019 00:00:00
+Capacity Units,EU North,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,US West 2,5.84,Standard v2,05/09/2019 00:00:00
+Capacity Units,US West 2,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,US West,5.84,Standard v2,05/09/2019 00:00:00
+Capacity Units,AP East,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,US East,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,US East 2,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,EU North,5.84,Standard v2,05/09/2019 00:00:00
+Capacity Units,EU West,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,US West,10.512,WAF v2,05/09/2019 00:00:00
+Capacity Units,US East 2,5.84,Standard v2,05/09/2019 00:00:00
+Capacity Units,US East,5.84,Standard v2,05/09/2019 00:00:00
+Capacity Units,AP Southeast,5.84,Standard v2,05/09/2019 00:00:00
+Fixed Cost,US West 2,146,Standard v2,05/09/2019 00:00:00
+Fixed Cost,AP Southeast,189.8,Standard v2,05/09/2019 00:00:00
+Fixed Cost,US West,341.64000000000004,WAF v2,05/09/2019 00:00:00
+Fixed Cost,AP Southeast,341.64000000000004,WAF v2,05/09/2019 00:00:00
+Fixed Cost,US West,189.8,Standard v2,05/09/2019 00:00:00
+Fixed Cost,EU West,189.8,Standard v2,05/09/2019 00:00:00
+Fixed Cost,AP East,407.34000000000003,WAF v2,05/09/2019 00:00:00
+Fixed Cost,US East,262.8,WAF v2,05/09/2019 00:00:00
+Fixed Cost,US West 2,262.8,WAF v2,05/09/2019 00:00:00
+Fixed Cost,AP East,226.3,Standard v2,05/09/2019 00:00:00
+Fixed Cost,EU North,315.36,WAF v2,05/09/2019 00:00:00
+Fixed Cost,US East 2,262.8,WAF v2,05/09/2019 00:00:00
+Fixed Cost,US East 2,146,Standard v2,05/09/2019 00:00:00
+Fixed Cost,US East,146,Standard v2,05/09/2019 00:00:00
+Fixed Cost,EU West,341.64000000000004,WAF v2,05/09/2019 00:00:00
+Fixed Cost,EU North,175.2,Standard v2,05/09/2019 00:00:00
+Large Gateway,EU West,366.28479999999996,WAF,11/01/2016 00:00:00
+Large Gateway,AP East,366.28479999999996,WAF,11/01/2016 00:00:00
+Large Gateway,US East,327.04,WAF,11/01/2016 00:00:00
+Large Gateway,AP Southeast,366.28479999999996,WAF,11/01/2016 00:00:00
+Large Gateway,US West,366.28479999999996,WAF,11/01/2016 00:00:00
+Large Gateway,US West 2,327.04,WAF,11/01/2016 00:00:00
+Large Gateway,EU North,366.28479999999996,WAF,11/01/2016 00:00:00
+Large Gateway,US East 2,327.04,WAF,11/01/2016 00:00:00
+Large Gateway,US West 2,233.6,Basic,03/01/2016 00:00:00
+Large Gateway,EU West,261.632,Basic,05/01/2015 00:00:00
+Large Gateway,US East,233.6,Basic,05/01/2015 00:00:00
+Large Gateway,AP East,261.632,Basic,05/01/2015 00:00:00
+Large Gateway,AP Southeast,261.632,Basic,05/01/2015 00:00:00
+Large Gateway,US West,261.632,Basic,05/01/2015 00:00:00
+Large Gateway,EU North,261.632,Basic,05/01/2015 00:00:00
+Large Gateway,US East 2,233.6,Basic,05/01/2015 00:00:00
+Medium Gateway,AP Southeast,103.0176,WAF,11/01/2016 00:00:00
+Medium Gateway,US East,91.98,WAF,11/01/2016 00:00:00
+Medium Gateway,US West,103.0176,WAF,11/01/2016 00:00:00
+Medium Gateway,EU West,103.0176,WAF,11/01/2016 00:00:00
+Medium Gateway,US West 2,91.98,WAF,11/01/2016 00:00:00
+Medium Gateway,EU North,103.0176,WAF,11/01/2016 00:00:00
+Medium Gateway,US East 2,91.98,WAF,11/01/2016 00:00:00
+Medium Gateway,AP East,103.0176,WAF,11/01/2016 00:00:00
+Medium Gateway,US West 2,51.1,Basic,03/01/2016 00:00:00
+Medium Gateway,EU North,57.232,Basic,05/01/2015 00:00:00
+Medium Gateway,EU West,57.232,Basic,05/01/2015 00:00:00
+Medium Gateway,US East,51.1,Basic,05/01/2015 00:00:00
+Medium Gateway,US East 2,51.1,Basic,05/01/2015 00:00:00
+Medium Gateway,AP Southeast,57.232,Basic,05/01/2015 00:00:00
+Medium Gateway,AP East,57.232,Basic,05/01/2015 00:00:00
+Medium Gateway,US West,57.232,Basic,05/01/2015 00:00:00
+Small Gateway,US West 2,18.25,Basic,03/01/2016 00:00:00
+Small Gateway,EU North,20.44,Basic,05/01/2015 00:00:00
+Small Gateway,AP East,20.44,Basic,05/01/2015 00:00:00
+Small Gateway,US East,18.25,Basic,05/01/2015 00:00:00
+Small Gateway,US West,20.44,Basic,05/01/2015 00:00:00
+Small Gateway,AP Southeast,20.44,Basic,05/01/2015 00:00:00
+Small Gateway,EU West,20.44,Basic,05/01/2015 00:00:00
+Small Gateway,US East 2,18.25,Basic,05/01/2015 00:00:00

@@ -20,7 +20,7 @@ namespace UnitTests
             {
                 var subscriptionId = await arm.GetFirstSubscriptionId();
                 var json = await arm.GetRateCardJsonAsync(subscriptionId);
-                json = json.PrettyJson();
+                json = json.ToPrettyJson();
 
                 File.WriteAllText("../../../RAW/RateCard.json", json);
             }
@@ -33,7 +33,7 @@ namespace UnitTests
             {
                 var subscriptionId = await arm.GetFirstSubscriptionId();
                 var json = await arm.GetComputeResourcesSkus(subscriptionId);
-                json = json.PrettyJson();
+                json = json.ToPrettyJson();
 
                 File.WriteAllText("../../../RAW/ComputeResourcesSkus.json", json);
             }
@@ -66,15 +66,16 @@ namespace UnitTests
         [TestMethod]
         public void RefreshMeterCategories()
         {
-            var csvFileName = Path.Combine(K.DataFolder, "MeterCategories.csv");
-
-            RawData.RateCard.Value
+            var catList = RawData.RateCard.Value
                 .Meters
-                .Select(x => new { x.MeterCategory, x.MeterSubCategory })
+                .Select(x => x.MeterCategory)
                 .Distinct()
-                .OrderBy(x => x.MeterCategory)
-                .ThenBy(x => x.MeterSubCategory)
-                .SaveAsCsv(csvFileName);
+                .Sort()
+                .ToList();
+
+            var categoryListFileName = Path.Combine(K.DataFolder, "meters", "MeterCategories.all.txt");
+
+            File.WriteAllText(categoryListFileName, string.Join(Environment.NewLine, catList));
         }
 
     }

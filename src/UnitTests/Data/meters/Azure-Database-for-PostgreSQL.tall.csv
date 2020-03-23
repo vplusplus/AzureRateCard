@@ -1,0 +1,248 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+2 vCore,US West 2,49.64,Basic - Compute Gen5,05/01/2018 00:00:00
+2 vCore,US West,64.53200000000001,Basic - Compute Gen4,05/01/2018 00:00:00
+2 vCore,AP Southeast,75.92,Basic - Compute Gen4,05/01/2018 00:00:00
+2 vCore,US East 2,59.568000000000005,Basic - Compute Gen4,05/01/2018 00:00:00
+2 vCore,US East 2,59.568000000000005,Basic - Compute Gen5,05/01/2018 00:00:00
+2 vCore,EU West,58.108000000000004,Basic - Compute Gen5,05/01/2018 00:00:00
+2 vCore,EU North,53.144000000000005,Basic - Compute Gen4,05/01/2018 00:00:00
+2 vCore,AP East,94.82699999999998,Basic - Compute Gen5,05/01/2018 00:00:00
+2 vCore,EU West,58.108000000000004,Basic - Compute Gen4,05/01/2018 00:00:00
+2 vCore,US West,64.53200000000001,Basic - Compute Gen5,05/01/2018 00:00:00
+2 vCore,US East,49.64,Basic - Compute Gen5,05/01/2018 00:00:00
+2 vCore,AP Southeast,75.92,Basic - Compute Gen5,05/01/2018 00:00:00
+2 vCore,AP East,94.82699999999998,Basic - Compute Gen4,05/01/2018 00:00:00
+2 vCore,US East,49.64,Basic - Compute Gen4,05/01/2018 00:00:00
+2 vCore,EU North,53.144000000000005,Basic - Compute Gen5,05/01/2018 00:00:00
+Data Stored,US West 2,83.95,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,EU West,100.01,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,AP East,126.28999999999999,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,EU North,92.71000000000001,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,US East 2,100.74000000000001,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,AP Southeast,100.74000000000001,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,US East,83.95,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,US West,100.74000000000001,Hyperscale (Citus) General Purpose Storage,01/01/2020 00:00:00
+Data Stored,EU North,53.29,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Data Stored,US West 2,44.603,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Data Stored,EU West,57.597,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Data Stored,US East,44.603,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Data Stored,AP Southeast,57.597,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Data Stored,US East 2,44.603,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Data Stored,US West,50.370000000000005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,EU West,50.005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US East,41.975,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,AP East,62.999,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,AP Southeast,50.370000000000005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,EU North,46.208999999999996,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US East 2,50.370000000000005,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US West 2,41.975,General Purpose - Large-Scale Storage,12/14/2018 00:00:00
+Data Stored,US West,80.3,Basic - Storage,05/01/2018 00:00:00
+Data Stored,AP East,100.74000000000001,Basic - Storage,05/01/2018 00:00:00
+Data Stored,US West 2,83.95,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,EU North,80.3,Basic - Storage,05/01/2018 00:00:00
+Data Stored,AP East,251.85,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,AP East,125.925,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,US East,182.5,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,EU West,99.937,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,EU North,92.345,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,US East,83.95,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,US West 2,182.5,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,US West,100.74000000000001,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,US East,73,Basic - Storage,05/01/2018 00:00:00
+Data Stored,US West 2,73,Basic - Storage,05/01/2018 00:00:00
+Data Stored,AP Southeast,100.74000000000001,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,US West,201.48000000000002,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,US East 2,200.75000000000003,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,EU North,201.48000000000002,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,EU West,217.54,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,US East 2,87.6,Basic - Storage,05/01/2018 00:00:00
+Data Stored,AP Southeast,201.48000000000002,Memory Optimized - Storage,05/01/2018 00:00:00
+Data Stored,EU West,86.86999999999999,Basic - Storage,05/01/2018 00:00:00
+Data Stored,US East 2,100.74000000000001,General Purpose - Storage,05/01/2018 00:00:00
+Data Stored,AP Southeast,80.3,Basic - Storage,05/01/2018 00:00:00
+GRS Data Stored,AP Southeast,175.2,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,EU North,160.6,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,US West 2,146,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,EU West,173.73999999999998,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,US East 2,175.2,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,US West,175.2,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,AP East,219,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,US East,146,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+GRS Data Stored,EU West,173.73999999999998,Backup Storage,05/01/2018 00:00:00
+GRS Data Stored,AP East,219,Backup Storage,05/01/2018 00:00:00
+GRS Data Stored,US West,175.2,Backup Storage,05/01/2018 00:00:00
+GRS Data Stored,US West 2,146,Backup Storage,05/01/2018 00:00:00
+GRS Data Stored,EU North,160.6,Backup Storage,05/01/2018 00:00:00
+GRS Data Stored,US East 2,175.2,Backup Storage,05/01/2018 00:00:00
+GRS Data Stored,US East,146,Backup Storage,05/01/2018 00:00:00
+GRS Data Stored,AP Southeast,175.2,Backup Storage,05/01/2018 00:00:00
+IO Rate Operations,AP Southeast,80.3,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,EU North,80.3,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,US East 2,87.6,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,AP East,100.74000000000001,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,EU West,86.86999999999999,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,US West 2,73,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,US West,80.3,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,US East,73,Basic - Storage,05/01/2018 00:00:00
+IO Rate Operations,US East,73,Memory Optimized - Storage,10/03/2017 00:00:00
+IO Rate Operations,EU West,80.3,Memory Optimized - Storage,10/03/2017 00:00:00
+IO Rate Operations,US East 2,80.3,Memory Optimized - Storage,10/03/2017 00:00:00
+IO Rate Operations,AP East,100.37500000000001,Memory Optimized - Storage,10/03/2017 00:00:00
+IO Rate Operations,US West 2,73,Memory Optimized - Storage,10/03/2017 00:00:00
+IO Rate Operations,US West,80.3,Memory Optimized - Storage,10/03/2017 00:00:00
+IO Rate Operations,EU North,80.3,Memory Optimized - Storage,10/03/2017 00:00:00
+IO Rate Operations,AP Southeast,80.3,Memory Optimized - Storage,10/03/2017 00:00:00
+LRS Data Stored,US West 2,73,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,US East 2,87.6,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,US West,87.6,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,EU North,80.3,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,AP East,109.5,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,EU West,86.86999999999999,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,AP Southeast,87.6,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,US East,73,Hyperscale (Citus) Backup Storage,01/01/2020 00:00:00
+LRS Data Stored,US West,87.6,Backup Storage,05/01/2018 00:00:00
+LRS Data Stored,US East,73,Backup Storage,05/01/2018 00:00:00
+LRS Data Stored,AP East,109.5,Backup Storage,05/01/2018 00:00:00
+LRS Data Stored,US West 2,73,Backup Storage,05/01/2018 00:00:00
+LRS Data Stored,AP Southeast,87.6,Backup Storage,05/01/2018 00:00:00
+LRS Data Stored,US East 2,87.6,Backup Storage,05/01/2018 00:00:00
+LRS Data Stored,EU West,86.86999999999999,Backup Storage,05/01/2018 00:00:00
+LRS Data Stored,EU North,80.3,Backup Storage,05/01/2018 00:00:00
+Provisioned IOPS,EU West,23.944000000000003,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned IOPS,AP Southeast,23.944000000000003,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned IOPS,US East,18.469,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned IOPS,EU North,21.754,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned IOPS,US East 2,18.469,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned IOPS,US West 2,18.469,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned Throughput (MBps),US East 2,372.3,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned Throughput (MBps),AP Southeast,483.26000000000005,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned Throughput (MBps),US East,372.3,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned Throughput (MBps),EU North,446.76,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned Throughput (MBps),US West 2,372.3,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Provisioned Throughput (MBps),EU West,483.26000000000005,Hyperscale (Citus) High Performance Storage,04/08/2019 00:00:00
+Read Replica vCore,US West 2,12.41,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East,43.8,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West,16.06,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP East,59.08474,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US East,12.41,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP Southeast,104.02499999999999,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West 2,12.41,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,AP East,118.16874999999999,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East 2,35.13125,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,EU North,48.362500000000004,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West,37.23,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US West 2,87.6,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West,16.06,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,EU West,104.93749999999999,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East 2,13.651000000000002,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU North,13.139999999999999,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP East,65.01599,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU North,70.44500000000001,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East,31.937499999999996,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP East,59.08474,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West,74.46,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP East,23.725,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,EU North,35.222500000000004,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US East 2,13.651000000000002,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US West 2,63.87499999999999,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU West,14.6,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP Southeast,94.535,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East,87.6,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP East,130.03125,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP Southeast,18.98,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East 2,96.36,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP East,23.725,Basic - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP Southeast,47.2675,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,EU North,96.72500000000001,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East 2,70.2625,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West,37.23,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP Southeast,52.012499999999996,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West 2,43.8,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,AP Southeast,47.2675,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU West,52.925,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East 2,35.13125,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West 2,31.937499999999996,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East,31.937499999999996,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,EU West,75.92,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US West 2,31.937499999999996,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US West,96.72500000000001,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU North,35.222500000000004,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,US East,12.41,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US East,63.87499999999999,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU West,37.96,General Purpose - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,AP Southeast,18.98,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,EU West,37.96,General Purpose - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU North,13.139999999999999,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US East 2,48.18,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+Read Replica vCore,EU West,14.6,Basic - Compute Gen4,10/03/2017 00:00:00
+Read Replica vCore,US West,48.362500000000004,Memory Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US East,90.44043,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,US West 2,90.44043,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,US West 2,112.70543,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,AP East,155.84842999999998,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,EU North,96.79142999999999,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,EU North,122.19543,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,AP Southeast,121.10043,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,US East,112.70543,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,AP East,144.75243,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,EU West,102.55843,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,EU West,130.80943,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,US East 2,130.00643,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,AP Southeast,130.00643,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,US West,122.19543,Hyperscale (Citus) Compute - Worker Node,01/01/2020 00:00:00
+vCore,US West,101.24443000000001,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,US East 2,103.21543,Hyperscale (Citus) Compute - Coordinator Node,01/01/2020 00:00:00
+vCore,AP Southeast,94.60799999999999,General Purpose - Compute Gen4,05/01/2018 00:00:00
+vCore,EU West,76.066,General Purpose - Compute Gen4,05/01/2018 00:00:00
+vCore,US West,95.703,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,US West,32.266000000000005,Basic - Compute Gen4,05/01/2018 00:00:00
+vCore,AP Southeast,94.60799999999999,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,EU West,29.054000000000002,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,US East 2,76.723,General Purpose - Compute Gen4,05/01/2018 00:00:00
+vCore,AP Southeast,37.96,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,EU West,104.317,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,US East,63.948,General Purpose - Compute Gen4,05/01/2018 00:00:00
+vCore,US West,74.75200000000001,General Purpose - Compute Gen4,05/01/2018 00:00:00
+vCore,US East,24.82,Basic - Compute Gen4,05/01/2018 00:00:00
+vCore,AP East,118.26,General Purpose - Compute Gen4,05/01/2018 00:00:00
+vCore,AP East,47.377,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,AP Southeast,37.96,Basic - Compute Gen4,05/01/2018 00:00:00
+vCore,AP East,47.377,Basic - Compute Gen4,05/01/2018 00:00:00
+vCore,AP East,118.26,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,US West 2,24.82,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,US East 2,29.784000000000002,Basic - Compute Gen4,05/01/2018 00:00:00
+vCore,US West 2,86.213,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,US East,63.948,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,EU North,95.703,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,EU North,26.572000000000003,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,EU West,29.054000000000002,Basic - Compute Gen4,05/01/2018 00:00:00
+vCore,US East 2,76.723,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,EU North,70.29899999999999,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,US East 2,103.51400000000001,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,AP Southeast,103.51400000000001,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,US East 2,29.784000000000002,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,US West,74.75200000000001,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,US East,86.213,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,EU North,26.572000000000003,Basic - Compute Gen4,05/01/2018 00:00:00
+vCore,US East,24.82,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,EU West,76.066,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,AP East,129.356,Memory Optimized - Compute Gen5,05/01/2018 00:00:00
+vCore,US West 2,63.948,General Purpose - Compute Gen5,05/01/2018 00:00:00
+vCore,EU North,70.29899999999999,General Purpose - Compute Gen4,05/01/2018 00:00:00
+vCore,US West,32.266000000000005,Basic - Compute Gen5,05/01/2018 00:00:00
+vCore,US East,63.87499999999999,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,AP Southeast,94.535,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US West 2,87.6,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,AP East,118.16874999999999,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,EU North,70.44500000000001,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US East,87.6,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US West,74.46,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US East 2,70.2625,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US West 2,63.87499999999999,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,EU West,104.93749999999999,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,EU North,96.72500000000001,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,AP Southeast,104.02499999999999,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US West,96.72500000000001,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,US East 2,96.36,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,EU West,75.92,Storage Optimized - Compute Gen5,10/03/2017 00:00:00
+vCore,AP East,130.03125,Memory And Storage Optimized - Compute Gen5,10/03/2017 00:00:00

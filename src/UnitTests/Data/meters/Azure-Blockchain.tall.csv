@@ -1,0 +1,31 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Basic Transaction Node,US East,0.9125,Quorum,04/08/2019 00:00:00
+Basic Transaction Node,EU West,1.1680000000000001,Quorum,04/08/2019 00:00:00
+Basic Transaction Node,EU North,1.022,Quorum,04/08/2019 00:00:00
+Basic Transaction Node,AP Southeast,1.1680000000000001,Quorum,04/08/2019 00:00:00
+Basic Transaction Node,US West 2,0.9125,Quorum,04/08/2019 00:00:00
+Basic Validator Node,EU North,1.022,Quorum,04/08/2019 00:00:00
+Basic Validator Node,AP Southeast,1.1680000000000001,Quorum,04/08/2019 00:00:00
+Basic Validator Node,EU West,1.1680000000000001,Quorum,04/08/2019 00:00:00
+Basic Validator Node,US East,0.9125,Quorum,04/08/2019 00:00:00
+Basic Validator Node,US West 2,0.9125,Quorum,04/08/2019 00:00:00
+Data Manager Transactions,AP Southeast,0.0949,Quorum,10/10/2019 00:00:00
+Data Manager Transactions,EU North,0.0876,Quorum,10/10/2019 00:00:00
+Data Manager Transactions,US East,0.07300000000000001,Quorum,10/10/2019 00:00:00
+Data Manager Transactions,EU West,0.0949,Quorum,10/10/2019 00:00:00
+Data Manager Transactions,US West 2,0.07300000000000001,Quorum,10/10/2019 00:00:00
+Standard Transaction Node,US West 2,3.869,Quorum,04/08/2019 00:00:00
+Standard Transaction Node,AP Southeast,5.037,Quorum,04/08/2019 00:00:00
+Standard Transaction Node,EU North,4.3069999999999995,Quorum,04/08/2019 00:00:00
+Standard Transaction Node,US East,3.869,Quorum,04/08/2019 00:00:00
+Standard Transaction Node,EU West,4.891,Quorum,04/08/2019 00:00:00
+Standard Validator Node,AP Southeast,5.037,Quorum,04/08/2019 00:00:00
+Standard Validator Node,US West 2,3.869,Quorum,04/08/2019 00:00:00
+Standard Validator Node,EU North,4.3069999999999995,Quorum,04/08/2019 00:00:00
+Standard Validator Node,EU West,4.891,Quorum,04/08/2019 00:00:00
+Standard Validator Node,US East,3.869,Quorum,04/08/2019 00:00:00
+Storage,AP Southeast,47.45,Quorum,04/08/2019 00:00:00
+Storage,US East,36.5,Quorum,04/08/2019 00:00:00
+Storage,EU North,40.15,Quorum,04/08/2019 00:00:00
+Storage,EU West,45.625,Quorum,04/08/2019 00:00:00
+Storage,US West 2,36.5,Quorum,04/08/2019 00:00:00

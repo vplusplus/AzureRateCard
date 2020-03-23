@@ -1,0 +1,13 @@
+SKU,Region,PerMonth,SubCategory,EffectiveDate
+Cache,EU West,6073.6,File System Caching Service,01/01/2020 00:00:00
+Cache,AP Southeast,6059.000000000001,File System Caching Service,01/01/2020 00:00:00
+Cache,US West 2,4672,File System Caching Service,01/01/2020 00:00:00
+Cache,US East,4672,File System Caching Service,01/01/2020 00:00:00
+Cache,EU North,5606.4,File System Caching Service,01/01/2020 00:00:00
+Cache,US East 2,4672,File System Caching Service,01/01/2020 00:00:00
+Cache Disk,AP Southeast,0.24528,File System Caching Service,01/01/2020 00:00:00
+Cache Disk,US West 2,0.1898,File System Caching Service,01/01/2020 00:00:00
+Cache Disk,US East 2,0.1898,File System Caching Service,01/01/2020 00:00:00
+Cache Disk,EU North,0.22776,File System Caching Service,01/01/2020 00:00:00
+Cache Disk,EU West,0.24528,File System Caching Service,01/01/2020 00:00:00
+Cache Disk,US East,0.1898,File System Caching Service,01/01/2020 00:00:00
