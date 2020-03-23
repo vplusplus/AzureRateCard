@@ -1,4 +1,6 @@
 ﻿
+--
+
 Azure Storage Standard and Premium Blob Storage.
 20MB File
 Download using WebClient.
