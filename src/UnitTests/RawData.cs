@@ -12,13 +12,13 @@ namespace UnitTests
 
     internal static class RawData
     {
-        public static readonly Lazy<RateCard> RateCard = new Lazy<RateCard>(LoadRateCardOnce);
-        static RateCard LoadRateCardOnce()
+        public static readonly Lazy<AzRateCard> RateCard = new Lazy<AzRateCard>(LoadRateCardOnce);
+        static AzRateCard LoadRateCardOnce()
         {
             using (var file = File.OpenText(K.RateCardFileName))
             {
                 var serializer = new JsonSerializer();
-                return (RateCard)serializer.Deserialize(file, typeof(RateCard));
+                return (AzRateCard)serializer.Deserialize(file, typeof(AzRateCard));
             }
         }
 

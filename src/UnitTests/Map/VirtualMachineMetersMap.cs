@@ -54,21 +54,7 @@ namespace UnitTests
     {
 
 
-        public static IEnumerable<Meter> KeepLatest(this IEnumerable<Meter> items)
-        {
-            // If multiple meters match with different EffectiveDates,
-            // keep the latest.
-
-            return items
-                .Where(x => x.EffectiveDate <= DateTime.UtcNow)
-                .OrderByDescending(x => x.EffectiveDate)
-                .GroupBy(x => new { x.MeterName, x.MeterCategory, x.MeterSubCategory, x.MeterRegion, x.Unit })
-                .Select(x => x.First())
-                ;
-        }
-
-
-        public static IEnumerable<Meter> SplitCombinedMeterNames(this IEnumerable<Meter> items)
+        public static IEnumerable<AzMeter> SplitCombinedMeterNames(this IEnumerable<AzMeter> items)
         {
             foreach(var item in items)
             {
@@ -81,7 +67,7 @@ namespace UnitTests
                     {
                         if (!string.IsNullOrWhiteSpace(sku))
                         {
-                            yield return new Meter()
+                            yield return new AzMeter()
                             {
                                 MeterId = item.MeterId,
 

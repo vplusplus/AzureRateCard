@@ -29,7 +29,7 @@ namespace UnitTests
         //..................................................................................
         #region ToResouceRate() - Translate Meter to ResoureRate
         //..................................................................................
-        public static ResourceRate ToResourceRate(this Meter meter)
+        public static ResourceRate ToResourceRate(this AzMeter meter)
         {
             var perHour = (meter.MeterRates?.FirstOrDefault().Value).GetValueOrDefault(0.0);
             var perMonth = perHour * K.HoursPerMonth;
@@ -45,7 +45,7 @@ namespace UnitTests
             };
         }
 
-        public static IEnumerable<ResourceRate> ToResourceRate(this IEnumerable<Meter> meters)
+        public static IEnumerable<ResourceRate> ToResourceRate(this IEnumerable<AzMeter> meters)
         {
             return meters.Select(ToResourceRate);
         }

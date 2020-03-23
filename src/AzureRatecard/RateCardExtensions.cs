@@ -21,7 +21,7 @@ namespace AzureRateCard
             if (null == armClient) throw new ArgumentNullException(nameof(armClient));
 
             var path = "/subscriptions?api-version=2020-01-01";
-            var subs = await armClient.GetManyAsync<Subscription>(path);
+            var subs = await armClient.GetManyAsync<AzSubscription>(path);
             var sub = subs?.FirstOrDefault();
             if (null == sub) throw new Exception("Given credential do not have access to any Subscription. Please assign minimally READER access to atleast ONE subscription");
 
