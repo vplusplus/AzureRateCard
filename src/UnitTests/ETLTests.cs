@@ -38,13 +38,25 @@ namespace UnitTests
             meters = meters
                 //.Filter(x => x.MeterRegion, keepRegions, dropRegions)
                 //.Filter(x => x.MeterRegion, vm_keepRegions, vm_dropRegions)
-                .ApplyConfigFilters()
-                .ApplyConfigFilters("VirtualMachines")
+                .ApplyConfigFilters(K.FilterConfigurationBaseFolder)
                 .ToList()
                 ;
 
-            var keptRegions = meters.Select(x => x.MeterRegion).Distinct().Sort().ToList();
-            foreach (var r in keptRegions) Console.WriteLine($"[{r}]");
+            var groups = meters
+                .Select(x => new { x.MeterCategory, x.MeterRegion })
+                .Distinct()
+                .GroupBy(x => x.MeterCategory)
+                .ToList();
+
+            foreach(var g in groups) 
+            {
+                var region = g.Select(x => x.MeterRegion).Sort().ToList();
+
+                Console.WriteLine($"[{g.Key}]");
+                foreach (var v in region) Console.WriteLine(v);
+
+                Console.WriteLine();
+            }
         }
 
         /*

@@ -13,6 +13,7 @@ namespace UnitTests
         public const string DataFolder = "../../../Data";
         public const string ConfigFolder = "../../../Config";
 
+        public static readonly string FilterConfigurationBaseFolder = Path.Combine(ConfigFolder, "Filters");
         public static string RateCardFileName => Path.Combine(RawDataFolder, "RateCard.json");
         public static string ComputeResourcesSkusFileName => Path.Combine(RawDataFolder, "ComputeResourcesSkus.json");
 

@@ -3,5 +3,9 @@
 // RX Fillters
 // ------------------------------------------------------ 
 
-US East 2$
+// AP East$
+// AP Southeast$
+// EU North$
+// EU West$
 
+^US
