@@ -1,10 +1,11 @@
-﻿using AzureRateCard.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using Newtonsoft.Json;
 using System.Linq;
+
+using Newtonsoft.Json;
+using AzureRateCard.Models;
 
 namespace UnitTests
 {
@@ -13,6 +14,7 @@ namespace UnitTests
     internal static class RawData
     {
         public static readonly Lazy<AzRateCard> RateCard = new Lazy<AzRateCard>(LoadRateCardOnce);
+
         static AzRateCard LoadRateCardOnce()
         {
             using (var file = File.OpenText(K.RateCardFileName))
@@ -22,24 +24,15 @@ namespace UnitTests
             }
         }
 
-        public static IEnumerable<string> AllRegions => LoadRegionNames(Path.Combine(K.DataFolder, "Regions.All.txt"));
-        public static IEnumerable<string> SelectRegions => LoadRegionNames(Path.Combine(K.DataFolder, "Regions.keep.txt"));
         static IReadOnlyList<string> LoadRegionNames(string fileName)
         {
-            return File
-                .ReadAllLines(fileName)
-                .IgnoreNullsBlanksCommentsAndPleaseTrim()
+            return RateCard
+                .Value
+                .Meters
+                .Select(x => x.MeterRegion)
+                .Distinct()
                 .Sort()
                 .ToList();
         }
-        static IEnumerable<string> IgnoreNullsBlanksCommentsAndPleaseTrim(this IEnumerable<string> items)
-        {
-            return items?
-                .IgnoreNulls()
-                .IgnoreBlankLines()
-                .IgnoreComments()
-                .Trim();
-        }
-
     }
 }

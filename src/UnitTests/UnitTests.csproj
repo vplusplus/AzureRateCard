@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <Folder Include="Config\Filters\Storage\" />
-    <Folder Include="Data\meters\" />
     <Folder Include="Junk\" />
     <Folder Include="RawData\" />
   </ItemGroup>

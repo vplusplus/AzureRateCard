@@ -1,13 +1,14 @@
 ﻿
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 
-using Newtonsoft.Json;
 using CsvHelper;
 using CsvHelper.Configuration;
+using System.Text.RegularExpressions;
 
 namespace UnitTests
 {
@@ -44,15 +45,18 @@ namespace UnitTests
             return lines?.OrderBy(x => x);
         }
 
-        public static bool In(this string something, IEnumerable<string> set)
+        public static Regex[] ToRegex(this string[] rxPatterns, RegexOptions options = RegexOptions.Compiled | RegexOptions.IgnoreCase)
         {
-            return null != something && null != set && set.Any(x => x.Equals(something));
+            if (null == rxPatterns) throw new ArgumentNullException(nameof(rxPatterns));
+
+            return rxPatterns
+                .Where(x => !string.IsNullOrEmpty(x))
+                .Select(x => x.Trim())
+                .Select(x => new Regex(x, options))
+                .ToArray()
+                ;
         }
 
-        public static string ToJson<T>(this T something)
-        {
-            return null == something ? null : JsonConvert.SerializeObject(something, Formatting.Indented);
-        }
 
         public static string ToPrettyJson(this string json)
         {
@@ -85,18 +89,6 @@ namespace UnitTests
                 if (null != map) csvWriter.Configuration.RegisterClassMap(map);
                 csvWriter.WriteRecords(items);
             }
-        }
-
-        public static bool ContainsAny(this string something, string[] set)
-        {
-            return set.Any(x => something.Contains(x));
-        }
-
-        public static TValue GetValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, TValue defaultValue)
-        {
-            return dictionary.TryGetValue(key, out var value)
-                ? value
-                : defaultValue;
         }
     }
 }

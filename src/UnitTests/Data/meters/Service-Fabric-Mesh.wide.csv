@@ -1,6 +1,0 @@
-SKU,SubCategory,AP East,AP Southeast,EU North,EU West,US East,US East 2,US West,US West 2
-32 GiB Disk,Volume Disks,,2398.05,2398.05,,2131.6,,2131.6,
-Memory Duration,Container Compute,,0.00146,0.00146,,0.00146,,0.00146,
-Provisioned IOPS (per 100 IOPS),Reliable Collections,,4.38,3.65,,3.65,,3.65,
-Reliable Dictionary and Queue,Reliable Collections,,131.4,109.5,,109.5,,109.5,
-vCPU Duration,Container Compute,,0.00511,0.00511,,0.00511,,0.00438,

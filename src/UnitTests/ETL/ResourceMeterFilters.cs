@@ -190,26 +190,3 @@ namespace UnitTests.ETL
 
     };
 }
-
-
-/*
-        static IEnumerable<AzMeter> Keep(this IEnumerable<AzMeter> resourceMeters, Func<AzMeter, string> propertySelector, Regex[] rxPatterns)
-        {
-            if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
-            if (null == propertySelector) throw new ArgumentNullException(nameof(propertySelector));
-
-            return null == rxPatterns || 0 == rxPatterns.Length
-                ? resourceMeters
-                : resourceMeters.Where(m => propertySelector(m).MatchesAny(rxPatterns));
-        }
-
-        static IEnumerable<AzMeter> Drop(this IEnumerable<AzMeter> resourceMeters, Func<AzMeter, string> propertySelector, Regex[] rxPatterns)
-        {
-            if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
-            if (null == propertySelector) throw new ArgumentNullException(nameof(propertySelector));
-
-            return null == rxPatterns || 0 == rxPatterns.Length
-                ? resourceMeters
-                : resourceMeters.Where(m => !propertySelector(m).MatchesAny(rxPatterns));
-        }
-*/
