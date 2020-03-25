@@ -1,18 +1,7 @@
 
-using System;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using Newtonsoft.Json;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CsvHelper;
-using AzureRateCard.Models;
-using System.Diagnostics;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using CsvHelper.Configuration;
 
+using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UnitTests.ETL;
 
 namespace UnitTests
@@ -20,60 +9,20 @@ namespace UnitTests
     [TestClass]
     public class ETLTests
     {
-        static string[] LoadFilters(string filterPath)
-        {
-            var filePath = Path.Combine(K.ConfigFolder, filterPath);
-
-            return File.Exists(filePath)
-                ? File.ReadAllLines(filePath).IgnoreNulls().IgnoreBlankLines().IgnoreComments().ToArray()
-                : null;
-        }
-
-
         [TestMethod]
-        public void FilterAzMetersBasedOnConfigurationFiles()
+        public void VM_ETL_Tests()
         {
             var meters = RawData.RateCard.Value.Meters.AsEnumerable();
 
             meters = meters
-                //.Filter(x => x.MeterRegion, keepRegions, dropRegions)
-                //.Filter(x => x.MeterRegion, vm_keepRegions, vm_dropRegions)
                 .ApplyConfigFilters(K.FilterConfigurationBaseFolder)
+                .KeepLatest()
                 .ToList()
                 ;
 
-            var groups = meters
-                .Select(x => new { x.MeterCategory, x.MeterRegion })
-                .Distinct()
-                .GroupBy(x => x.MeterCategory)
-                .ToList();
-
-            foreach(var g in groups) 
-            {
-                var region = g.Select(x => x.MeterRegion).Sort().ToList();
-
-                Console.WriteLine($"[{g.Key}]");
-                foreach (var v in region) Console.WriteLine(v);
-
-                Console.WriteLine();
-            }
+            VirtualMachines.MapAndExport(meters, "../../../junk");
         }
-
-        /*
-            string[] Blacklist = new[]
-            {
-                "Low Priority",
-                "Expired",
-                "Promo",
-                "Azure NetApp Files"
-            };
-        */
-
     }
-
-
-
-
 }
 
 /*

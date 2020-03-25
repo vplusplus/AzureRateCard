@@ -3,20 +3,22 @@
 // RX Fillters
 // ------------------------------------------------------ 
 
+// AMR
 
-UK South
-UK West
-US Central
-US DoD
-US East
-US East 2
-US Gov
-US Gov AZ
-US Gov TX
-US North Central
-US Sec East
-US Sec West
-US South Central
-US West
-US West 2
-US West Central
+US East$
+US East 2$
+US West$
+US West 2$
+
+// EMA
+
+EU North$
+EU West$
+
+//ASPAC
+
+AP East$
+AP Southeast$
+
+
+

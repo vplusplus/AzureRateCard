@@ -1,8 +1,7 @@
 ﻿
 // ------------------------------------------------------ 
-// RX Fillters
+// Meter categories that are processed
 // ------------------------------------------------------ 
-
 
 Virtual Machines$
 Storage$

@@ -10,9 +10,8 @@ using AzureRateCard.Models;
 
 namespace UnitTests.ETL
 {
-    static class ResourceMeterExtensions
+    static class ResourceMeterFilters
     {
-
         /// <summary>
         /// There may be multiple Resouce Meters, based on effective date.
         /// Filters future-dated-meters and retains the latest of there are multiple.
@@ -38,12 +37,11 @@ namespace UnitTests.ETL
         public static IEnumerable<AzMeter> ApplyConfigFilters(this IEnumerable<AzMeter> resourceMeters, string filterConfigurationBaseFolder)
         {
             if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
-
-            var noFilters = !Directory.Exists(filterConfigurationBaseFolder);
-            if (noFilters) return resourceMeters;
+            if (null == filterConfigurationBaseFolder) throw new ArgumentNullException(nameof(filterConfigurationBaseFolder));
+            if (!Directory.Exists(filterConfigurationBaseFolder)) throw new DirectoryNotFoundException($"FilterConfiguration base folder not found: {filterConfigurationBaseFolder}");
 
             // Apply filters (if exists)
-            // Syntax:  ~/Config/Filters/{propertyName}.keep|drop.txt
+            // Syntax: ~/{propertyName}.keep|drop.txt
             resourceMeters = resourceMeters
                 .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterId)
                 .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterName)
@@ -53,15 +51,13 @@ namespace UnitTests.ETL
                 .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.Unit)
                 ;
 
-            // Look for category specific filters.
+            // Category specific filters are organized as sub-folders.
+            // The folder name is inferred as MeterCategoryName
+            // Syntax: ~/{meterCategory}/{propertyName}.keep|drop.txt
             var categoryNames = new DirectoryInfo(filterConfigurationBaseFolder).GetDirectories().Select(x => x.Name);
-
-            // Apply meterCategory specific filters if specified.
-            // Syntax: ~/Config/Filters/{meterCategory}/{propertyName}.keep|drop.txt
+            
             foreach (var categoryName in categoryNames)
             {
-                Console.WriteLine($"??? {categoryName}");
-
                 resourceMeters = resourceMeters
                     .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterId, categoryName)
                     .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterName, categoryName)
@@ -95,21 +91,20 @@ namespace UnitTests.ETL
             var rxWhiteList = File.Exists(whiteListFileName) ? ReadRegexFilters(whiteListFileName) : null;
             var rxBlackList = File.Exists(blackListFileName) ? ReadRegexFilters(blackListFileName) : null;
 
-            var noWhiteList = null == rxWhiteList || 0 == rxWhiteList.Length;
-            var noBlackList = null == rxBlackList || 0 == rxBlackList.Length;
+            var whiteListed = rxWhiteList?.Length > 0;
+            var blackListed = rxBlackList?.Length > 0;
 
-            if (noWhiteList && noBlackList)
+            // If neither whiteListed or blackListed, which will be most of the cases...
+            if (!whiteListed && !blackListed)
             {
-                // Optmization:
-                // If neither whiteList or blackList is specified, which will be most of the cases,
                 // return the original sequence as-is.
                 return resourceMeters;
             }
             else
             {
-                // TODO: Avoid double-negative
-                if (!noWhiteList) Console.WriteLine(whiteListFileName);
-                if (!noBlackList) Console.WriteLine(blackListFileName);
+                // So that we know what files are applied...
+                if (whiteListed) Console.WriteLine(whiteListFileName);
+                if (blackListed) Console.WriteLine(blackListFileName);
 
                 // Apply the filters
                 var fxPropertySelector = propertySelector.Compile();
@@ -122,28 +117,25 @@ namespace UnitTests.ETL
             if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
             if (null == propertySelector) throw new ArgumentNullException(nameof(propertySelector));
 
-            foreach(var item in resourceMeters)
+            appliesToMeterCategory = NormalizeMeterCategoryName(appliesToMeterCategory);
+
+            foreach (var item in resourceMeters)
             {
+                // Ignore NULLs.
                 if (null == item) continue;
 
-                // If this filterset is targetted for a specific MeterCategory...
-                // Note: The name is inferred from directory name, hence represents a normalized version.
+                // If target category specified...
                 if (null != appliesToMeterCategory)
                 {
+                    // If this filterset is targetted for a specific MeterCategory...
+                    // Check if given resourceMeter belongs to suggested meter category.
                     var sameCategory =
-                        null != item.MeterCategory && (
-                            item.MeterCategory.Equals(appliesToMeterCategory, StringComparison.OrdinalIgnoreCase) ||
-                            item.MeterCategory.Replace(" ", string.Empty).Equals(appliesToMeterCategory, StringComparison.OrdinalIgnoreCase) 
-                        );
+                        null != item.MeterCategory && 
+                        appliesToMeterCategory.Equals(NormalizeMeterCategoryName(item.MeterCategory), StringComparison.OrdinalIgnoreCase);
 
                     // If this filterset is targetted for a specific MeterCategory...
                     // Don't drop the item, pass t along.
                     if (!sameCategory) yield return item;
-                }
-                else
-                {
-                    // EMPTY ELSE BLOCK to avoid future logic error.
-                    // Following code is expected to be a fall throough
                 }
 
                 // Evaluate whitelist and blacklist.
@@ -152,6 +144,12 @@ namespace UnitTests.ETL
                 var shouldDrop = null != rxBlacklist && rxBlacklist.Length > 0 && propertyValue.MatchesAny(rxBlacklist);
 
                 if (shouldKeep && !shouldDrop) yield return item;
+            }
+
+            static string NormalizeMeterCategoryName(string nameToNormalize)
+            {
+                // Remove spaces
+                return nameToNormalize?.Replace(" ", string.Empty);
             }
         }
 
@@ -169,20 +167,20 @@ namespace UnitTests.ETL
             return File.ReadAllLines(filterFileName)
                 .IgnoreNulls()
                 .IgnoreBlankLines()
-                .IgnoreComments()
                 .Trim()
+                .IgnoreComments()
                 .ToArray()
-                .ToRegex();
+                .ToRegex(RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
 
         static string GetPropertyName(this Expression<Func<AzMeter, string>> propertySelector)
         {
             if (null == propertySelector) throw new ArgumentNullException(nameof(propertySelector));
 
-            MemberExpression memberExpression = propertySelector.Body as MemberExpression;
+            var memberExpression = propertySelector.Body as MemberExpression;
             if (null == memberExpression) throw new Exception("Invalid property selector. Not a member expression.");
 
-            PropertyInfo propInfo = memberExpression.Member as PropertyInfo;
+            var propInfo = memberExpression.Member as PropertyInfo;
             if (null == propInfo) throw new Exception("Invalid property selector. Not a Property expression.");
 
             return propInfo.Name;
