@@ -12,14 +12,38 @@ namespace UnitTests.ETL
 {
     static class ResourceMeterFilters
     {
+        //.............................................................................
+        #region FindDuplicates(), KeepLatest()
+        //.............................................................................
         /// <summary>
-        /// There may be multiple Resouce Meters, based on effective date.
-        /// Filters future-dated-meters and retains the latest of there are multiple.
+        /// Filters future-dated-meters and retains the latest if there are multiple.
+        /// </summary>
+        public static IEnumerable<AzMeter> FindDuplicates(this IEnumerable<AzMeter> resourceMeters)
+        {
+            if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
+
+            // Ignore future dated items.
+            // Sort by descending EffectiveDate, keep the latest on top.
+            // Group by alternate key, take the first entry.
+            return resourceMeters
+                .Where(x => x.EffectiveDate <= DateTime.UtcNow)
+                .OrderByDescending(x => x.EffectiveDate)
+                .GroupBy(x => new { x.MeterName, x.MeterCategory, x.MeterSubCategory, x.MeterRegion, x.Unit })
+                .Where(g => g.Count() > 1)
+                .SelectMany(g => g)
+                ;
+        }
+
+        /// <summary>
+        /// Filters future-dated-meters and retains the latest if there are multiple.
         /// </summary>
         public static IEnumerable<AzMeter> KeepLatest(this IEnumerable<AzMeter> resourceMeters)
         {
             if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
 
+            // Ignore future dated items.
+            // Sort by descending EffectiveDate, keep the latest on top.
+            // Group by alternate key, take the first entry.
             return resourceMeters
                 .Where(x => x.EffectiveDate <= DateTime.UtcNow)
                 .OrderByDescending(x => x.EffectiveDate)
@@ -28,50 +52,52 @@ namespace UnitTests.ETL
                 ;
         }
 
+        #endregion
+
         //.............................................................................
-        #region IEnumerable<AzMeter>.ApplyConfigFilters()
+        #region IEnumerable<AzMeter>.FilterData(filtersBaseFolder)
         //.............................................................................
         /// <summary>
         /// Applies filters specified in config folders.
         /// </summary>
-        public static IEnumerable<AzMeter> ApplyConfigFilters(this IEnumerable<AzMeter> resourceMeters, string filterConfigurationBaseFolder)
+        public static IEnumerable<AzMeter> FilterData(this IEnumerable<AzMeter> resourceMeters, string filtersBaseFolder)
         {
             if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
-            if (null == filterConfigurationBaseFolder) throw new ArgumentNullException(nameof(filterConfigurationBaseFolder));
-            if (!Directory.Exists(filterConfigurationBaseFolder)) throw new DirectoryNotFoundException($"FilterConfiguration base folder not found: {filterConfigurationBaseFolder}");
+            if (null == filtersBaseFolder) throw new ArgumentNullException(nameof(filtersBaseFolder));
+            if (!Directory.Exists(filtersBaseFolder)) throw new DirectoryNotFoundException($"FilterConfigurationBaseFolder not found: {filtersBaseFolder}");
 
             // Apply filters (if exists)
             // Syntax: ~/{propertyName}.keep|drop.txt
             resourceMeters = resourceMeters
-                .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterId)
-                .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterName)
-                .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterCategory)
-                .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterSubCategory)
-                .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterRegion)
-                .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.Unit)
+                .FilterData(filtersBaseFolder, m => m.MeterId)
+                .FilterData(filtersBaseFolder, m => m.MeterName)
+                .FilterData(filtersBaseFolder, m => m.MeterCategory)
+                .FilterData(filtersBaseFolder, m => m.MeterSubCategory)
+                .FilterData(filtersBaseFolder, m => m.MeterRegion)
+                .FilterData(filtersBaseFolder, m => m.Unit)
                 ;
 
             // Category specific filters are organized as sub-folders.
             // The folder name is inferred as MeterCategoryName
             // Syntax: ~/{meterCategory}/{propertyName}.keep|drop.txt
-            var categoryNames = new DirectoryInfo(filterConfigurationBaseFolder).GetDirectories().Select(x => x.Name);
+            var categoryNames = new DirectoryInfo(filtersBaseFolder).GetDirectories().Select(x => x.Name);
             
-            foreach (var categoryName in categoryNames)
+            foreach (var targetCategory in categoryNames)
             {
                 resourceMeters = resourceMeters
-                    .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterId, categoryName)
-                    .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterName, categoryName)
-                    .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterCategory, categoryName)
-                    .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterSubCategory, categoryName)
-                    .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.MeterRegion, categoryName)
-                    .ApplyConfigFilters(filterConfigurationBaseFolder, m => m.Unit, categoryName)
+                    .FilterData(filtersBaseFolder, m => m.MeterId, targetCategory)
+                    .FilterData(filtersBaseFolder, m => m.MeterName, targetCategory)
+                    .FilterData(filtersBaseFolder, m => m.MeterCategory, targetCategory)
+                    .FilterData(filtersBaseFolder, m => m.MeterSubCategory, targetCategory)
+                    .FilterData(filtersBaseFolder, m => m.MeterRegion, targetCategory)
+                    .FilterData(filtersBaseFolder, m => m.Unit, targetCategory)
                     ;
             }
 
             return resourceMeters;
         }
 
-        static IEnumerable<AzMeter> ApplyConfigFilters(this IEnumerable<AzMeter> resourceMeters, string filtersBaseFolder, Expression<Func<AzMeter, string>> propertySelector, string meterCategory = null)
+        static IEnumerable<AzMeter> FilterData(this IEnumerable<AzMeter> resourceMeters, string filtersBaseFolder, Expression<Func<AzMeter, string>> propertySelector, string targetCategory = null)
         {
             if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
             if (null == filtersBaseFolder) throw new ArgumentNullException(nameof(filtersBaseFolder));
@@ -79,13 +105,13 @@ namespace UnitTests.ETL
 
             var propertyName = propertySelector.GetPropertyName();
 
-            var whiteListFileName = null == meterCategory
+            var whiteListFileName = null == targetCategory
                 ? Path.Combine(filtersBaseFolder, $"{propertyName}.keep.txt")
-                : Path.Combine(filtersBaseFolder, meterCategory, $"{propertyName}.keep.txt");
+                : Path.Combine(filtersBaseFolder, targetCategory, $"{propertyName}.keep.txt");
 
-            var blackListFileName = null == meterCategory
+            var blackListFileName = null == targetCategory
                 ? Path.Combine(filtersBaseFolder, $"{propertyName}.drop.txt")
-                : Path.Combine(filtersBaseFolder, meterCategory, $"{propertyName}.drop.txt");
+                : Path.Combine(filtersBaseFolder, targetCategory, $"{propertyName}.drop.txt");
 
             // Load regex filters if the files exist.
             var rxWhiteList = File.Exists(whiteListFileName) ? ReadRegexFilters(whiteListFileName) : null;
@@ -97,27 +123,27 @@ namespace UnitTests.ETL
             // If neither whiteListed or blackListed, which will be most of the cases...
             if (!whiteListed && !blackListed)
             {
-                // return the original sequence as-is.
+                // Optmiztion: Return the original sequence as-is.
                 return resourceMeters;
             }
             else
             {
                 // So that we know what files are applied...
-                if (whiteListed) Console.WriteLine(whiteListFileName);
-                if (blackListed) Console.WriteLine(blackListFileName);
+                // if (whiteListed) Console.WriteLine(whiteListFileName);
+                // if (blackListed) Console.WriteLine(blackListFileName);
 
                 // Apply the filters
                 var fxPropertySelector = propertySelector.Compile();
-                return resourceMeters.ApplyConfigFilters(fxPropertySelector, rxWhiteList, rxBlackList, meterCategory);
+                return resourceMeters.FilterData(fxPropertySelector, rxWhiteList, rxBlackList, targetCategory);
             }
         }
 
-        static IEnumerable<AzMeter> ApplyConfigFilters(this IEnumerable<AzMeter> resourceMeters, Func<AzMeter, string> propertySelector, Regex[] rxWhiteList, Regex[] rxBlacklist, string appliesToMeterCategory = null)
+        static IEnumerable<AzMeter> FilterData(this IEnumerable<AzMeter> resourceMeters, Func<AzMeter, string> propertySelector, Regex[] rxWhiteList, Regex[] rxBlacklist, string targetCategory = null)
         {
             if (null == resourceMeters) throw new ArgumentNullException(nameof(resourceMeters));
             if (null == propertySelector) throw new ArgumentNullException(nameof(propertySelector));
 
-            appliesToMeterCategory = NormalizeMeterCategoryName(appliesToMeterCategory);
+            targetCategory = NormalizeMeterCategoryName(targetCategory);
 
             foreach (var item in resourceMeters)
             {
@@ -125,16 +151,16 @@ namespace UnitTests.ETL
                 if (null == item) continue;
 
                 // If target category specified...
-                if (null != appliesToMeterCategory)
+                if (null != targetCategory)
                 {
                     // If this filterset is targetted for a specific MeterCategory...
                     // Check if given resourceMeter belongs to suggested meter category.
                     var sameCategory =
                         null != item.MeterCategory && 
-                        appliesToMeterCategory.Equals(NormalizeMeterCategoryName(item.MeterCategory), StringComparison.OrdinalIgnoreCase);
+                        targetCategory.Equals(NormalizeMeterCategoryName(item.MeterCategory), StringComparison.OrdinalIgnoreCase);
 
                     // If this filterset is targetted for a specific MeterCategory...
-                    // Don't drop the item, pass t along.
+                    // Don't drop the item, pass it along.
                     if (!sameCategory) yield return item;
                 }
 

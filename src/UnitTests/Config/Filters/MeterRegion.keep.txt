@@ -4,19 +4,17 @@
 // ------------------------------------------------------ 
 
 // AMR
-
 US East$
 US East 2$
 US West$
 US West 2$
 
-// EMA
 
+// EMA
 EU North$
 EU West$
 
 //ASPAC
-
 AP East$
 AP Southeast$
 

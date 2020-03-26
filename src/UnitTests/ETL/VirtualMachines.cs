@@ -81,9 +81,11 @@ namespace UnitTests.ETL
     /// </summary>
     static class VirtualMachines
     {
-        // vm-basic|standard-windows|hybrid-wide|tall.csv
+        // Basic vs Standard
+        // Windows vs Hybrid license
+        // Tall vs Wide format
 
-        public static void MapAndExport(IEnumerable<AzMeter> resourceMeters, string baseFolder)
+        public static void MapAndExport(IEnumerable<AzMeter> resourceMeters, string outputFolder)
         {
             // MAP / Split / Export
             var vmRates = resourceMeters
@@ -93,13 +95,19 @@ namespace UnitTests.ETL
                 .MapVersion()
                 .MapLicense()
                 .MapOffer()
+                .MapRegionName()
                 .OrderBy(x => x.Version).ThenBy(x => x.SKU)
                 .ToList()
                 ;
 
-            vmRates.SaveAsCsv(Path.Combine(baseFolder, "vms.all.csv"));
-            vmRates.SplitAndExport(baseFolder, "vms");
+            // Save all records...
+            vmRates.SaveAsCsv(Path.Combine(outputFolder, "vm.all.csv"));
+
+            // Split Basic|Standard, Windows|Hybrid; Save as Tall & Wide formats
+            vmRates.SplitAndExport(outputFolder);
         }
+
+        #region ToVMRate(), SplitSKUs(), MapVersion(), MapOffer(), MapLicense()
 
         static VMRate ToVMRate(this AzMeter meter)
         {
@@ -180,22 +188,34 @@ namespace UnitTests.ETL
             }
         }
 
-        private static void SplitAndExport(this IEnumerable<VMRate> vmRates, string baseFolder, string fileNamePrefix)
+        static IEnumerable<VMRate> MapRegionName(this IEnumerable<VMRate> vmRates)
         {
-            var basicVms = vmRates.Where(x => x.Offering.Equals("Basic")).ToList();
-            var standardVms = vmRates.Where(x => x.Offering.Equals("Standard")).ToList();
+            foreach (var item in vmRates)
+            {
+                var oldName = item.Region;
+                item.Region = RawData.RegionNameMap.Value.TryGetValue(oldName, out var newName) ? newName : oldName;
 
-            if (basicVms.Count > 0) basicVms.ExportWindowsAndByol(baseFolder, $"{fileNamePrefix}-basic");
-            if (standardVms.Count > 0) standardVms.ExportWindowsAndByol(baseFolder, $"{fileNamePrefix}-standard");
+                yield return item;
+            }
         }
 
-        static void ExportWindowsAndByol(this IEnumerable<VMRate> vmRates, string baseFolder, string fileNamePrefix)
-        {
-            var windowsVms = vmRates.Where(x => x.License.Equals("Windows")).ToList();
-            var byolVms = vmRates.Where(x => x.License.Equals("BYOL")).ToList();
 
-            if (windowsVms.Count > 0) windowsVms.ExportTallAndWide(baseFolder, $"{fileNamePrefix}-windows");
-            if (byolVms.Count > 0) byolVms.ExportTallAndWide(baseFolder, $"{fileNamePrefix}-byol");
+        #endregion
+
+        #region SplitAndExport
+
+        private static void SplitAndExport(this IEnumerable<VMRate> vmRates, string baseFolder)
+        {
+            // Basic vs Standard
+            //var basicVms = vmRates.Where(x => x.Offering.Equals("Basic")).ToList();
+            var standardVms = vmRates.Where(x => x.Offering.Equals("Standard")).ToList();
+
+            // Windows vs Hybrid
+            var standardWindowsVms = standardVms.Where(x => x.License.Equals("Windows")).ToList();
+            var standardHybridVms = standardVms.Where(x => x.License.Equals("BYOL")).ToList();
+
+            standardWindowsVms.ExportTallAndWide(baseFolder, "vm-windows");
+            standardHybridVms.ExportTallAndWide(baseFolder, "vm-hybrid");
         }
 
         static void ExportTallAndWide(this IEnumerable<VMRate> vmRates, string baseFolder, string fileNamePrefix)
@@ -224,6 +244,8 @@ namespace UnitTests.ETL
             ratesByRegion.SaveAsCsv(wideFileName, wideCsvMap);
 
         }
+
+        #endregion
 
 
 

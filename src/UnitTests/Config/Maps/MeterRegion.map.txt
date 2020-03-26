@@ -1,0 +1,17 @@
+﻿
+// ------------------------------------------------------ 
+// Region Name Alias
+// ------------------------------------------------------ 
+
+US East			| EastUS
+US East 2		| EastUS2
+US West			| WestUS
+US West 2		| WestUS2
+
+EU North		| NorhEurope
+EU West			| WestEurope
+AP East			| EastAsia
+AP Southeast	| SouthEastAsia
+
+
+

@@ -14,6 +14,7 @@ namespace UnitTests
     internal static class RawData
     {
         public static readonly Lazy<AzRateCard> RateCard = new Lazy<AzRateCard>(LoadRateCardOnce);
+        public static readonly Lazy<IDictionary<string, string>> RegionNameMap = new Lazy<IDictionary<string, string>>(LoadRegionNameMapOnce);
 
         static AzRateCard LoadRateCardOnce()
         {
@@ -34,5 +35,22 @@ namespace UnitTests
                 .Sort()
                 .ToList();
         }
+
+        static IDictionary<string, string> LoadRegionNameMapOnce()
+        {
+            var regionNameMapFileName = Path.Combine(K.ConfigFolder, "Maps", "MeterRegion.map.txt");
+
+            return !File.Exists(regionNameMapFileName) ? new Dictionary<string, string>() :
+                File.ReadAllLines(regionNameMapFileName)
+                    .IgnoreNulls()
+                    .IgnoreBlankLines()
+                    .IgnoreComments()
+                    .Select(x => x.Split('|'))
+                    .Where(x => x.Length == 2)
+                    .Where(x => !string.IsNullOrWhiteSpace(x[0]) && !string.IsNullOrWhiteSpace(x[1]))
+                    .ToDictionary(x => x[0].Trim(), x => x[1].Trim(), StringComparer.OrdinalIgnoreCase)
+                    ;
+        }
+
     }
 }
