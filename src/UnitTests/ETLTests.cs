@@ -21,7 +21,7 @@ namespace UnitTests
                 .ToList()
                 ;
 
-            VirtualMachines.MapAndExport(meters, "D:/junk");
+            VirtualMachines.MapAndExport(meters, "../../../junk");
         }
 
         [TestMethod]
@@ -32,7 +32,7 @@ namespace UnitTests
                 .ToList()
                 ;
 
-            meters.SaveAsCsv("D:/Junk/Duplicates.csv");
+            meters.SaveAsCsv("../../../Junk/Duplicates.csv");
         }
 
         [TestMethod]
