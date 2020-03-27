@@ -1,17 +1,28 @@
 ﻿
-// ------------------------------------------------------ 
-// Region Name Alias
-// ------------------------------------------------------ 
+// ----------------------------------------------------------------------------
+// Region Name Alias. 
+// This file is ALSO used to drive the order of rendered columns in wide format.
+// ----------------------------------------------------------------------------
 
-US East			| EastUS
-US East 2		| EastUS2
-US West			| WestUS
-US West 2		| WestUS2
+US West				| WestUS
+US West 2			| WestUS2
+US Central			| CentralUS
+US West Central		| WestCentralUS
+US North Central	| NorthCentralUS
+US South Central	| SouthCentralUS
+US East				| EastUS
+US East 2			| EastUS2
 
-EU North		| NorhEurope
-EU West			| WestEurope
-AP East			| EastAsia
-AP Southeast	| SouthEastAsia
+EU North			| NorhEurope
+EU West				| WestEurope
+
+AP East				| EastAsia
+AP Southeast		| SouthEastAsia
+
+
+
+
+
 
 
 

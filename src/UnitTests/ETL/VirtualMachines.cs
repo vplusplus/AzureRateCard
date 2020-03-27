@@ -18,6 +18,7 @@ namespace UnitTests.ETL
         public string Offering { get; set; }
         public string License { get; set; }
         public string Version { get; set; }
+        public string Unit { get; set; }
         public string Region { get; set; }
         public double Rate { get; set; }
 
@@ -29,11 +30,12 @@ namespace UnitTests.ETL
 
     class VMRateByRegion
     {
-        public string SKU { get; set; }
-        public string Offering { get; set; }
-        public string License { get; set; }
-        public string Version { get; set; }
+        public string MeterName { get; set; }
+        public string MeterCategory { get; set; }
+        public string MeterSubCategory { get; set; }
 
+        public string SKU { get; set; }
+        public string Unit { get; set; }
         public Dictionary<string, double> RateByRegion { get; set; }
     }
 
@@ -46,10 +48,10 @@ namespace UnitTests.ETL
             int index = 0;
 
             Map(m => m.SKU).Index(++index);
+            Map(m => m.MeterSubCategory).Name("Family").Index(++index);
+            Map(m => m.Unit).Index(++index);
             Map(m => m.Region).Index(++index);
             Map(m => m.Rate).Index(++index);
-            Map(m => m.Version).Index(++index);
-            Map(m => m.MeterSubCategory).Index(++index);
         }
     }
 
@@ -60,7 +62,8 @@ namespace UnitTests.ETL
             int index = 0;
 
             Map(m => m.SKU).Index(++index);
-            Map(m => m.Version).Index(++index);
+            Map(m => m.MeterSubCategory).Name("Family").Index(++index);
+            Map(m => m.Unit).Index(++index);
 
             foreach (var region in regionNames)
             {
@@ -90,7 +93,7 @@ namespace UnitTests.ETL
             // MAP / Split / Export
             var vmRates = resourceMeters
                 .Where(x => x.MeterCategory.Equals("Virtual Machines"))
-                .Select(ToVMRate)
+                .ToVMRate()
                 .SplitSKUs()
                 .MapVersion()
                 .MapLicense()
@@ -101,30 +104,62 @@ namespace UnitTests.ETL
                 ;
 
             // Save all records...
-            vmRates.SaveAsCsv(Path.Combine(outputFolder, "vm.all.csv"));
+            vmRates.SaveAsCsv(Path.Combine(outputFolder, "vm-all.csv"));
 
             // Split Basic|Standard, Windows|Hybrid; Save as Tall & Wide formats
-            vmRates.SplitAndExport(outputFolder);
+            vmRates.ExportToCsv(outputFolder);
         }
 
-        #region ToVMRate(), SplitSKUs(), MapVersion(), MapOffer(), MapLicense()
-
-        static VMRate ToVMRate(this AzMeter meter)
+        //...............................................................................
+        #region ToVMRate(), ToVMRateByRegion
+        //...............................................................................
+        static IEnumerable<VMRate> ToVMRate(this IEnumerable<AzMeter> resourceMeters)
         {
-            var perHour = (meter.MeterRates?.FirstOrDefault().Value).GetValueOrDefault(0.0);
-            var perMonth = perHour * K.HoursPerMonth;
+            return resourceMeters
+                .Select(ToVMRate)
+                ;
 
-            return new VMRate()
+            VMRate ToVMRate(AzMeter meter)
             {
-                MeterName = meter.MeterName,
-                MeterCategory = meter.MeterCategory,
-                MeterSubCategory = meter.MeterSubCategory,
+                var perHour = (meter.MeterRates?.FirstOrDefault().Value).GetValueOrDefault(0.0);
+                var perMonth = perHour * K.HoursPerMonth;
 
-                SKU = meter.MeterName,
-                Region = meter.MeterRegion,
-                Rate = perMonth,
-            };
+                return new VMRate()
+                {
+                    MeterName = meter.MeterName,
+                    MeterCategory = meter.MeterCategory,
+                    MeterSubCategory = meter.MeterSubCategory,
+
+                    SKU = meter.MeterName,
+                    Region = meter.MeterRegion,
+                    Unit = "1-month",
+                    Rate = perMonth,
+
+                };
+            }
         }
+
+        static IEnumerable<VMRateByRegion> ToVMRateByRegion(this IEnumerable<VMRate> vmRates)
+        {
+            return vmRates
+                .GroupBy(x => new { x.MeterName, x.MeterCategory, x.MeterSubCategory, x.SKU, x.Offering, x.License, x.Version, x.Unit })
+                .Select(g => new VMRateByRegion()
+                {
+                    MeterName = g.Key.MeterName,
+                    MeterCategory = g.Key.MeterCategory,
+                    MeterSubCategory = g.Key.MeterSubCategory,
+
+                    SKU = g.Key.SKU,
+                    Unit = g.Key.Unit,
+                    RateByRegion = g.ToDictionary(i => i.Region, i => i.Rate)
+                });
+        }
+
+        #endregion
+
+        //...............................................................................
+        #region SplitSKUs(), MapVersion(), MapOffer(), MapLicense()
+        //...............................................................................
 
         static IEnumerable<VMRate> SplitSKUs(this IEnumerable<VMRate> vmRates)
         {
@@ -202,9 +237,11 @@ namespace UnitTests.ETL
 
         #endregion
 
+        //...............................................................................
         #region SplitAndExport
+        //...............................................................................
 
-        private static void SplitAndExport(this IEnumerable<VMRate> vmRates, string baseFolder)
+        static void ExportToCsv(this IEnumerable<VMRate> vmRates, string baseFolder)
         {
             // Basic vs Standard
             //var basicVms = vmRates.Where(x => x.Offering.Equals("Basic")).ToList();
@@ -224,30 +261,18 @@ namespace UnitTests.ETL
             var tallFileName = Path.Combine(baseFolder, $"{fileNamePrefix}-tall.csv");
             vmRates.SaveAsCsv(tallFileName, VMRateTallCsvMap.Instance);
 
-            // List of region names
-            var regionNames = vmRates.Select(x => x.Region).Distinct().Sort().ToArray();
+            // PIVOT the data by region.
+            // Use the Region Name map as hint for specific order of pivot columns.
+            var ratesByRegion = vmRates.ToVMRateByRegion().ToList();
+            var regionNames = RawData.RegionNameMap.Value.Select(x => x.Value).ToArray();
 
-            var ratesByRegion = vmRates
-                .GroupBy(x => new { x.MeterName, x.MeterCategory, x.MeterSubCategory, x.SKU, x.Offering, x.License, x.Version })
-                .Select(g => new VMRateByRegion()
-                {
-                    SKU = g.Key.SKU,
-                    Offering = g.Key.Offering,
-                    License = g.Key.License,
-                    Version = g.Key.Version,
-                    RateByRegion = g.ToDictionary(i => i.Region, i => i.Rate)
-                })
-                .ToList();
-
+            // Save WIDE version
             var wideFileName = Path.Combine(baseFolder, $"{fileNamePrefix}-wide.csv");
             var wideCsvMap = new VMRateWideCsvMap(regionNames);
             ratesByRegion.SaveAsCsv(wideFileName, wideCsvMap);
-
         }
 
         #endregion
-
-
 
     }
 }

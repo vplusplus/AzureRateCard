@@ -1,5 +1,6 @@
 ﻿
-// DROP Basic and Dedicated
+// DROP Basic, Dedicated and LowPriority (by compute hours)
 
 Basic
 Dedicated
+Low Priority
